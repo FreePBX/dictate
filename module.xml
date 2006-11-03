@@ -7,7 +7,7 @@
 	<changelog>
 		*1.0.0* Original Release
 	</changelog>
-	<location>xx</location>
+	<location>release/2.2/dictate-1.0.0.tgz</location>
 	<info>http://aussievoip.com.au/wiki/freePBX-Dictation</info>
-	<md5sum>8ce946a2151c85ca90a00e6c20feb62b</md5sum>
+	<md5sum>a854f2fe790ceaa5ddd9fe64a1ac8368</md5sum>
 </module>
