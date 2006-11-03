@@ -1,0 +1,13 @@
+<module>
+	<rawname>dictate</rawname>
+	<name>Dictation</name>
+	<version>1.0.0</version>
+	<type>setup</type>
+	<category>Utilities</category>
+	<changelog>
+		*1.0.0* Original Release
+	</changelog>
+	<location>xx</location>
+	<info>http://aussievoip.com.au/wiki/freePBX-Dictation</info>
+	<md5sum>8ce946a2151c85ca90a00e6c20feb62b</md5sum>
+</module>
