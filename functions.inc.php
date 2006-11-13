@@ -44,7 +44,6 @@ function dictate_dodictate($c) {
 	$ext->add($id, $c, 'nodict', new ext_playback('feature-not-avail-line'));
 	$ext->add($id, $c, '', new ext_hangup(''));
 	$ext->add($id, $c, 'dictok', new ext_dictate($asterisk_conf['astvarlibdir'].'/sounds/dictate/${CALLERID(num)}'));
-	$ext->add($id, $c, '', new ext_macro('dodictate'));
 	$ext->add($id, $c, '', new ext_macro('hangupcall'));
 }
 
