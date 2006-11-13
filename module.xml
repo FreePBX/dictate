@@ -1,10 +1,11 @@
 <module>
 	<rawname>dictate</rawname>
 	<name>Dictation</name>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<type>setup</type>
 	<category>Provides a Feature Code</category>
 	<changelog>
+		*1.0.1* Replaced 'invalid extension' with 'feature not available on this line' when disabled
 		*1.0.0* Original Release
 	</changelog>
 	<description>This uses the app_dictate module of Asterisk to let users record dictate into their phones. When complete, the dictations can be emailed to an email address specified in the extension page.</description>
