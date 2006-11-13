@@ -33,7 +33,7 @@ function dictate_dodictate($c) {
 	global $ext;
 	global $asterisk_conf;
 
-	$id = "app-dictate"; // The context to be included
+	$id = "app-dictate-record"; // The context to be included
 
 	$ext->addInclude('from-internal-additional', $id); // Add the include from from-internal
 	$ext->add($id, $c, '', new ext_answer(''));
@@ -52,7 +52,7 @@ function dictate_senddictate($c) {
 	global $ext;
 	global $asterisk_conf;
 
-	$id = "app-dictate"; // The context to be included
+	$id = "app-dictate-send"; // The context to be included
 	$ext->addInclude('from-internal-additional', $id); // Add the include from from-internal
 	$ext->add($id, $c, '', new ext_answer(''));
 	$ext->add($id, $c, '', new ext_macro('user-callerid'));
