@@ -70,30 +70,46 @@ function dictate_senddictate($c) {
 	$ext->add($id, $c, '', new ext_macro('hangupcall'));
 }
 
-function dictate_configpageinit($dispnum) {
+function dictate_configpageinit($pagename) {
 	global $currentcomponent;
 
 	$action = isset($_REQUEST['action'])?$_REQUEST['action']:null;
 	$extdisplay = isset($_REQUEST['extdisplay'])?$_REQUEST['extdisplay']:null;
+	$extension = isset($_REQUEST['extension'])?$_REQUEST['extension']:null;
 	$tech_hardware = isset($_REQUEST['tech_hardware'])?$_REQUEST['tech_hardware']:null;
 
-	if ( $dispnum == 'users' || $dispnum == 'extensions' && ($action != 'del' && ($extdisplay != '' || $tech_hardware != '') ) )  {
-		// Setup the drop down boxes here.
-		$currentcomponent->addoptlistitem('dictena', 'enabled', 'Enabled');
-		$currentcomponent->addoptlistitem('dictena', 'disabled', 'Disabled');
-		$currentcomponent->setoptlistopts('dictena', 'sort', false);
-
-		$currentcomponent->addoptlistitem('dictfmt', 'ogg', 'Ogg Vorbis');
-		$currentcomponent->addoptlistitem('dictfmt', 'gsm', 'GSM');
-		$currentcomponent->addoptlistitem('dictfmt', 'wav', 'WAV');
-		$currentcomponent->setoptlistopts('dictfmt', 'sort', false);
-		// Add the 'process' function - this gets called when the page is loaded, to hook into 
-		// displaying stuff on the page.
-		$currentcomponent->addguifunc('dictate_configpageload');
-
-		// We also care about getting data back from the 'submit', so we need to hook in here, too.
-		$currentcomponent->addprocessfunc('dictate_configprocess');
+	// We only want to hook 'users' or 'extensions' pages.
+	if ($pagename != 'users' && $pagename != 'extensions') 
+		return true;
+	// On a 'new' user, 'tech_hardware' is set, and there's no extension. Hook into the page.
+	if ($tech_hardware != null) {
+		dictation_applyhooks();
+	} elseif ($action=="add") {
+		// We don't need to display anything on an 'add', but we do need to handle returned data.
+		$currentcomponent->addprocessfunc('dictate_configprocess', 5);
+	} elseif ($extdisplay != '') {
+		// We're now viewing an extension, so we need to display _and_ process.
+		dictation_applyhooks();
+		$currentcomponent->addprocessfunc('dictate_configprocess', 5);
 	}
+}
+
+
+function dictation_applyhooks() {
+	global $currentcomponent;
+
+	$currentcomponent->addoptlistitem('dictena', 'enabled', 'Enabled');
+	$currentcomponent->addoptlistitem('dictena', 'disabled', 'Disabled');
+	$currentcomponent->setoptlistopts('dictena', 'sort', false);
+
+	$currentcomponent->addoptlistitem('dictfmt', 'ogg', 'Ogg Vorbis');
+	$currentcomponent->addoptlistitem('dictfmt', 'gsm', 'GSM');
+	$currentcomponent->addoptlistitem('dictfmt', 'wav', 'WAV');
+	$currentcomponent->setoptlistopts('dictfmt', 'sort', false);
+	// Add the 'process' function - this gets called when the page is loaded, to hook into 
+	// displaying stuff on the page.
+	$currentcomponent->addguifunc('dictate_configpageload');
+
 }
 
 // This is called before the page is actually displayed, so we can use addguielem().
@@ -124,12 +140,18 @@ function dictate_configprocess() {
 	//create vars from the request
 	$action = isset($_REQUEST['action'])?$_REQUEST['action']:null;
 	$ext = isset($_REQUEST['extdisplay'])?$_REQUEST['extdisplay']:null;
+	$extn = isset($_REQUEST['extension'])?$_REQUEST['extension']:null;
 	$dictenabled = isset($_REQUEST['dictenabled'])?$_REQUEST['dictenabled']:null;
 	$dictemail = isset($_REQUEST['dictemail'])?$_REQUEST['dictemail']:null;
 	$dictformat = isset($_REQUEST['dictformat'])?$_REQUEST['dictformat']:null;
 
+	if ($ext==='') { 
+		$extdisplay = $extn; 
+	} else {
+		$extdisplay = $ext;
+	} 
 	if ($action == "add" || $action == "edit") {
-		dictate_update($ext, $dictenabled, $dictformat, $dictemail);
+		dictate_update($extdisplay, $dictenabled, $dictformat, $dictemail);
 	} elseif ($action == "del") {
 		dictate_del($extdisplay);
 	}
@@ -153,10 +175,14 @@ function dictate_get($xtn) {
 function dictate_update($ext, $ena, $fmt, $email) {
 	global $astman;
 	
-	// Update the settings in ASTDB
-	$astman->database_put("AMPUSER",$ext."/dictate/enabled",$ena);
-	$astman->database_put("AMPUSER",$ext."/dictate/format",$fmt);
-	$astman->database_put("AMPUSER",$ext."/dictate/email",$email);
+	if ($ena === 'disabled') {
+		dictate_del($ext);
+	} else {
+		// Update the settings in ASTDB
+		$astman->database_put("AMPUSER",$ext."/dictate/enabled",$ena);
+		$astman->database_put("AMPUSER",$ext."/dictate/format",$fmt);
+		$astman->database_put("AMPUSER",$ext."/dictate/email",$email);
+	}
 }
 
 function dictate_del($ext) {
