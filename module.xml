@@ -5,7 +5,7 @@
 	<type>setup</type>
 	<category>Provides a Feature Code</category>
 	<changelog>
-		*1.1.1* Fix for Dictation not appearing on User page when in D&U mode.
+		*1.1.1* Fix for Dictation not appearing on User page when in Device and User mode.
 		*1.1* Fix changes not sticking when creating an extension, replace Rob-sounds with Allison-sounds.
 		*1.0.1* Replaced 'invalid extension' with 'feature not available on this line' when disabled
 		*1.0.0* Original Release
