@@ -1,16 +1,17 @@
 <module>
 	<rawname>dictate</rawname>
 	<name>Dictation</name>
-	<version>1.1</version>
+	<version>1.1.1</version>
 	<type>setup</type>
 	<category>Provides a Feature Code</category>
 	<changelog>
+		*1.1.1* Fix for Dictation not appearing on User page when in D&U mode.
 		*1.1* Fix changes not sticking when creating an extension, replace Rob-sounds with Allison-sounds.
 		*1.0.1* Replaced 'invalid extension' with 'feature not available on this line' when disabled
 		*1.0.0* Original Release
 	</changelog>
 	<description>This uses the app_dictate module of Asterisk to let users record dictate into their phones. When complete, the dictations can be emailed to an email address specified in the extension page.</description>
-	<location>release/2.2/dictate-1.1.tgz</location>
+	<location>release/2.2/dictate-1.1.1.tgz</location>
 	<info>http://aussievoip.com.au/wiki/freePBX-Dictation</info>
-	<md5sum>ad53b90ce6a2ee11b7907c54d697d0eb</md5sum>
+	<md5sum>20d218be75eb99a5c9c8528b561a18cf</md5sum>
 </module>
