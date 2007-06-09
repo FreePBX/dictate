@@ -12,7 +12,7 @@
 		*1.0.0* Original Release
 	</changelog>
 	<description>This uses the app_dictate module of Asterisk to let users record dictate into their phones. When complete, the dictations can be emailed to an email address specified in the extension page.</description>
-	<location>release/2.3/dictate-1.1.1.tgz</location>
+	<location>release/2.3/dictate-1.1.2.tgz</location>
 	<info>http://aussievoip.com.au/wiki/freePBX-Dictation</info>
-	<md5sum>57e09970a52f012b4f746119ac1d5cee</md5sum>
+	<md5sum>f1b9db2d866e00dfea503b0acc0ababb</md5sum>
 </module>
