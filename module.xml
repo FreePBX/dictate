@@ -13,6 +13,6 @@
 		*1.0.0* Original Release
 	</changelog>
 	<description>This uses the app_dictate module of Asterisk to let users record dictate into their phones. When complete, the dictations can be emailed to an email address specified in the extension page.</description>
-	<location>release/2.3/dictate-1.1.2.tgz</location>
-	<md5sum>f1b9db2d866e00dfea503b0acc0ababb</md5sum>
+	<location>release/2.3/dictate-1.1.2.1.tgz</location>
+	<md5sum>758102e54950c213802127e21723f1c4</md5sum>
 </module>
