@@ -167,7 +167,7 @@ function dictate_get($xtn) {
 	// If it's blank, set it to disabled
 	if (!$ena) { $ena = "disabled"; }
 	// Default format is ogg
-	if (!$format) { $foramt = "ogg"; }
+	if (!$format) { $format = "ogg"; }
 
 	return array('enabled' => $ena, 'format' => $format, 'email' => $email);
 }
