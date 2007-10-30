@@ -1,10 +1,11 @@
 <module>
 	<rawname>dictate</rawname>
 	<name>Dictation</name>
-	<version>1.1.2.2</version>
+	<version>1.1.2.3</version>
 	<type>setup</type>
 	<category>Internal Options &amp; Configuration</category>
 	<changelog>
+		*1.1.2.3* #2312 fix dictate in devicesandusers mode
 		*1.1.2.2* changed categories
 		*1.1.2.1* bump for rc1
 		*1.1.2* changed ${CALLERID(number)} to ${AMPUSER} to accomodate CID number masquerading

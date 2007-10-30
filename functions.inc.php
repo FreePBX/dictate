@@ -21,7 +21,6 @@ function dictate_get_config($engine) {
 							$fname($fc);
 					} else {
 						$ext->add('from-internal-additional', 'debug', '', new ext_noop($modulename.": No func $fname"));
-						var_dump($item);
 					}	
 				}
 			}
@@ -84,6 +83,7 @@ function dictate_configpageinit($pagename) {
 	// On a 'new' user, 'tech_hardware' is set, and there's no extension. Hook into the page.
 	if ($tech_hardware != null || $pagename == 'users') {
 		dictation_applyhooks();
+		$currentcomponent->addprocessfunc('dictate_configprocess', 5);
 	} elseif ($action=="add") {
 		// We don't need to display anything on an 'add', but we do need to handle returned data.
 		$currentcomponent->addprocessfunc('dictate_configprocess', 5);
