@@ -151,7 +151,9 @@ function dictate_configprocess() {
 		$extdisplay = $ext;
 	} 
 	if ($action == "add" || $action == "edit") {
-		dictate_update($extdisplay, $dictenabled, $dictformat, $dictemail);
+		if (!isset($GLOBALS['abort']) || $GLOBALS['abort'] !== true) {
+			dictate_update($extdisplay, $dictenabled, $dictformat, $dictemail);
+		}
 	} elseif ($action == "del") {
 		dictate_del($extdisplay);
 	}
