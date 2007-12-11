@@ -1,10 +1,11 @@
 <module>
 	<rawname>dictate</rawname>
 	<name>Dictation</name>
-	<version>1.1.2.3</version>
+	<version>2.4.0</version>
 	<type>setup</type>
 	<category>Internal Options &amp; Configuration</category>
 	<changelog>
+		*2.4.0* abort if user/extension conflict and move hook after user/extnesion hook
 		*1.1.2.3* #2312 fix dictate in devicesandusers mode
 		*1.1.2.2* changed categories
 		*1.1.2.1* bump for rc1
@@ -15,6 +16,6 @@
 		*1.0.0* Original Release
 	</changelog>
 	<description>This uses the app_dictate module of Asterisk to let users record dictate into their phones. When complete, the dictations can be emailed to an email address specified in the extension page.</description>
-	<location>release/2.4/dictate-1.1.2.3.tgz</location>
-	<md5sum>1d9e2eefaced2f884cbf0ed93eb5af9a</md5sum>
+	<location>release/2.4/dictate-2.4.0.tgz</location>
+	<md5sum>87ae289bef505467979c5713d25e768e</md5sum>
 </module>
