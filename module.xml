@@ -1,10 +1,11 @@
 <module>
 	<rawname>dictate</rawname>
 	<name>Dictation</name>
-	<version>2.4.0</version>
+	<version>2.5.0</version>
 	<type>setup</type>
 	<category>Internal Options &amp; Configuration</category>
 	<changelog>
+		*2.5.0* typo in $_GLOBALS variable
 		*2.4.0* abort if user/extension conflict and move hook after user/extnesion hook
 		*1.1.2.3* #2312 fix dictate in devicesandusers mode
 		*1.1.2.2* changed categories
