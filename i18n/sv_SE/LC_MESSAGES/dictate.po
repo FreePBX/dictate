@@ -43,3 +43,6 @@ msgstr "Starta diktamen"
 msgid "Email completed dictation"
 msgstr "E-posta färdig diktamen"
 
+#: module.xlm:3
+msgid "Dictation"
+msgstr "Diktamen"
