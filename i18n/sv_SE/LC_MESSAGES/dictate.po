@@ -1,7 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX dictate\n"
-"POT-Creation-Date: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-10-10 17:30+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -10,6 +11,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
+
+#: functions.inc.php:101
+msgid "Enabled"
+msgstr "Aktiverad"
+
+#: functions.inc.php:102
+msgid "Disabled"
+msgstr "Avaktiverad"
 
 #: functions.inc.php:131
 msgid "Dictation Services"
@@ -36,10 +45,14 @@ msgid "The email address that completed dictations are sent to."
 msgstr "E-postadressen som diktamen ska skickas till"
 
 #: install.php:4
+msgid "Dictation"
+msgstr "Diktamen"
+
+#: install.php:5
 msgid "Perform dictation"
 msgstr "Starta diktamen"
 
-#: install.php:12
+#: install.php:6
 msgid "Email completed dictation"
 msgstr "E-posta färdig diktamen"
 

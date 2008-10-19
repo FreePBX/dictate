@@ -98,8 +98,8 @@ function dictate_configpageinit($pagename) {
 function dictation_applyhooks() {
 	global $currentcomponent;
 
-	$currentcomponent->addoptlistitem('dictena', 'enabled', 'Enabled');
-	$currentcomponent->addoptlistitem('dictena', 'disabled', 'Disabled');
+	$currentcomponent->addoptlistitem('dictena', 'enabled', _('Enabled'));
+	$currentcomponent->addoptlistitem('dictena', 'disabled',_('Disabled'));
 	$currentcomponent->setoptlistopts('dictena', 'sort', false);
 
 	$currentcomponent->addoptlistitem('dictfmt', 'ogg', 'Ogg Vorbis');
