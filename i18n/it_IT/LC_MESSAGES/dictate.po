@@ -1,0 +1,58 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 2.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-10-10 17:30+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Italian\n"
+"X-Poedit-Country: ITALY\n"
+
+#: functions.inc.php:101
+msgid "Enabled"
+msgstr "Attivato"
+
+#: functions.inc.php:102
+msgid "Disabled"
+msgstr "Disattivato"
+
+#: functions.inc.php:131
+msgid "Dictation Services"
+msgstr "Servizi Dettatura"
+
+#: functions.inc.php:132
+msgid "Please enter a valid Email Address"
+msgstr "Prego immettere un indirizzo Email valido"
+
+#: functions.inc.php:133
+msgid "Dictation Service"
+msgstr "Servizio "
+
+#: functions.inc.php:134
+msgid "Dictation Format"
+msgstr "Formato Dettatura"
+
+#: functions.inc.php:135
+msgid "Email Address"
+msgstr "Indirizzo Email"
+
+#: functions.inc.php:135
+msgid "The email address that completed dictations are sent to."
+msgstr "L'indirizzo email a cui inviare le dettature completate."
+
+#: install.php:4
+msgid "Dictation"
+msgstr "Dettatura"
+
+#: install.php:5
+msgid "Perform dictation"
+msgstr "Esegui dettatura"
+
+#: install.php:6
+msgid "Email completed dictation"
+msgstr "Email dettatura completata"
+
