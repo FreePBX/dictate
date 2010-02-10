@@ -163,9 +163,13 @@ function dictate_get($xtn) {
 	global $astman;
 
 	// Retrieve the dictation configuraiton from this user from ASTDB
-	$ena = $astman->database_get("AMPUSER",$xtn."/dictate/enabled");
-	$format = $astman->database_get("AMPUSER",$xtn."/dictate/format");
-	$email = $astman->database_get("AMPUSER",$xtn."/dictate/email");
+	if ($astman) {
+    $ena = $astman->database_get("AMPUSER",$xtn."/dictate/enabled");
+    $format = $astman->database_get("AMPUSER",$xtn."/dictate/format");
+    $email = $astman->database_get("AMPUSER",$xtn."/dictate/email");
+	} else {
+		fatal("Cannot connect to Asterisk Manager with ".$amp_conf["AMPMGRUSER"]."/".$amp_conf["AMPMGRPASS"]);
+	}
 	// If it's blank, set it to disabled
 	if (!$ena) { $ena = "disabled"; }
 	// Default format is ogg
@@ -181,9 +185,13 @@ function dictate_update($ext, $ena, $fmt, $email) {
 		dictate_del($ext);
 	} else {
 		// Update the settings in ASTDB
-		$astman->database_put("AMPUSER",$ext."/dictate/enabled",$ena);
-		$astman->database_put("AMPUSER",$ext."/dictate/format",$fmt);
-		$astman->database_put("AMPUSER",$ext."/dictate/email",$email);
+	  if ($astman) {
+		  $astman->database_put("AMPUSER",$ext."/dictate/enabled",$ena);
+		  $astman->database_put("AMPUSER",$ext."/dictate/format",$fmt);
+		  $astman->database_put("AMPUSER",$ext."/dictate/email",$email);
+	  } else {
+		  fatal("Cannot connect to Asterisk Manager with ".$amp_conf["AMPMGRUSER"]."/".$amp_conf["AMPMGRPASS"]);
+	  }
 	}
 }
 
@@ -191,7 +199,11 @@ function dictate_del($ext) {
 	global $astman;
 
 	// Clean up the tree when the user is deleted
-	$astman->database_deltree("AMPUSER/$ext/dictate");
+  if ($astman) {
+    $astman->database_deltree("AMPUSER/$ext/dictate");
+  } else {
+    fatal("Cannot connect to Asterisk Manager with ".$amp_conf["AMPMGRUSER"]."/".$amp_conf["AMPMGRPASS"]);
+  }
 }
 
 ?>
