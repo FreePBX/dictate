@@ -1,14 +1,26 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# This file is part of FreePBX.
 #
-#, fuzzy
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# FreePBX language template for dictate
+# Copyright (C) 2008, 2009, 2010 Bandwith.com
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-10 17:30+0200\n"
+"POT-Creation-Date: 2010-02-18 22:37+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,46 +28,60 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: functions.inc.php:101
-msgid "Enabled"
-msgstr ""
-
-#: functions.inc.php:102
-msgid "Disabled"
-msgstr ""
-
-#: functions.inc.php:131
-msgid "Dictation Services"
-msgstr ""
-
-#: functions.inc.php:132
-msgid "Please enter a valid Email Address"
-msgstr ""
-
-#: functions.inc.php:133
-msgid "Dictation Service"
-msgstr ""
-
-#: functions.inc.php:134
-msgid "Dictation Format"
-msgstr ""
-
-#: functions.inc.php:135
-msgid "Email Address"
-msgstr ""
-
-#: functions.inc.php:135
-msgid "The email address that completed dictations are sent to."
-msgstr ""
-
-#: install.php:4
+#: dictate/dictate.i18n.php:5 dictate/install.php:4
 msgid "Dictation"
 msgstr ""
 
-#: install.php:5
+#: dictate/dictate.i18n.php:7
+msgid ""
+"Internal Options \n"
+"&\n"
+" Configuration"
+msgstr ""
+
+#: dictate/dictate.i18n.php:11
+msgid ""
+"This uses the app_dictate module of Asterisk to let users record dictate "
+"into their phones. When complete, the dictations can be emailed to an email "
+"address specified in the extension page."
+msgstr ""
+
+#: dictate/functions.inc.php:101
+msgid "Enabled"
+msgstr ""
+
+#: dictate/functions.inc.php:102
+msgid "Disabled"
+msgstr ""
+
+#: dictate/functions.inc.php:131
+msgid "Dictation Services"
+msgstr ""
+
+#: dictate/functions.inc.php:132
+msgid "Please enter a valid Email Address"
+msgstr ""
+
+#: dictate/functions.inc.php:133
+msgid "Dictation Service"
+msgstr ""
+
+#: dictate/functions.inc.php:134
+msgid "Dictation Format"
+msgstr ""
+
+#: dictate/functions.inc.php:135
+msgid "Email Address"
+msgstr ""
+
+#: dictate/functions.inc.php:135
+msgid "The email address that completed dictations are sent to."
+msgstr ""
+
+#: dictate/install.php:5
 msgid "Perform dictation"
 msgstr ""
 
-#: install.php:6
+#: dictate/install.php:6
 msgid "Email completed dictation"
 msgstr ""
