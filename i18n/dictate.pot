@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-27 13:45+0100\n"
+"POT-Creation-Date: 2010-02-27 17:34+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,60 +28,47 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: dictate/dictate.i18n.php:5 dictate/install.php:4
 msgid "Dictation"
 msgstr ""
 
-#: dictate/dictate.i18n.php:7
 msgid ""
 "Internal Options \n"
 "&\n"
 " Configuration"
 msgstr ""
 
-#: dictate/dictate.i18n.php:11
 msgid ""
 "This uses the app_dictate module of Asterisk to let users record dictate "
 "into their phones. When complete, the dictations can be emailed to an email "
 "address specified in the extension page."
 msgstr ""
 
-#: dictate/functions.inc.php:101
 msgid "Enabled"
 msgstr ""
 
-#: dictate/functions.inc.php:102
 msgid "Disabled"
 msgstr ""
 
-#: dictate/functions.inc.php:131
 msgid "Dictation Services"
 msgstr ""
 
-#: dictate/functions.inc.php:132
 msgid "Please enter a valid Email Address"
 msgstr ""
 
-#: dictate/functions.inc.php:133
 msgid "Dictation Service"
 msgstr ""
 
-#: dictate/functions.inc.php:134
 msgid "Dictation Format"
 msgstr ""
 
-#: dictate/functions.inc.php:135
 msgid "Email Address"
 msgstr ""
 
-#: dictate/functions.inc.php:135
 msgid "The email address that completed dictations are sent to."
 msgstr ""
 
-#: dictate/install.php:5
 msgid "Perform dictation"
 msgstr ""
 
-#: dictate/install.php:6
 msgid "Email completed dictation"
 msgstr ""
