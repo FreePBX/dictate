@@ -1,12 +1,13 @@
 <module>
 	<rawname>dictate</rawname>
 	<name>Dictation</name>
-	<version>2.7.0.1</version>
+	<version>2.8.0.0</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<type>setup</type>
 	<category>Internal Options &amp; Configuration</category>
 	<changelog>
+		*2.8.0.0* published 2.8 version
 		*2.7.0.1* localizations
 		*2.7.0.0* #3873
 		*2.6.0.0* localizations
@@ -24,6 +25,6 @@
 		*1.0.0* Original Release
 	</changelog>
 	<description>This uses the app_dictate module of Asterisk to let users record dictate into their phones. When complete, the dictations can be emailed to an email address specified in the extension page.</description>
-	<location>release/2.7/dictate-2.7.0.1.tgz</location>
-	<md5sum>713e2f52a4f9a024cbbf14a45eca1817</md5sum>
+	<location>release/2.8/dictate-2.8.0.0.tgz</location>
+	<md5sum>7b1e6c2f4471b4dc6c82e4a21401b455</md5sum>
 </module>
