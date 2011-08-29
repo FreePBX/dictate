@@ -5,8 +5,7 @@
 	<version>2.9.0.0</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
-	<type>setup</type>
-	<category>Internal Options &amp; Configuration</category>
+	<category>Apps</category>
 	<changelog>
 		*2.9.0.0* #4533, #4651
 		*2.8.0.0* published 2.8 version
