@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-10 17:30+0200\n"
+"POT-Creation-Date: 2011-09-23 09:52+0000\n"
 "PO-Revision-Date: 2008-11-03 01:44+0200\n"
 "Last-Translator: \n"
 "Language-Team: Chavdar Iliev <chavdar_75@yahoo.com>\n"
@@ -18,47 +18,44 @@ msgstr ""
 "X-Poedit-Country: BULGARIA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: functions.inc.php:101
-msgid "Enabled"
-msgstr "Разрешен"
-
-#: functions.inc.php:102
-msgid "Disabled"
-msgstr "Забранен"
-
-#: functions.inc.php:131
-msgid "Dictation Services"
-msgstr "Услуги Диктовки"
-
-#: functions.inc.php:132
-msgid "Please enter a valid Email Address"
-msgstr "Моля въведете валиден Email Адрес"
-
-#: functions.inc.php:133
-msgid "Dictation Service"
-msgstr "Услуга Диктовка"
-
-#: functions.inc.php:134
-msgid "Dictation Format"
-msgstr "Формат на Диктовка"
-
-#: functions.inc.php:135
-msgid "Email Address"
-msgstr "Email Адрес"
-
-#: functions.inc.php:135
-msgid "The email address that completed dictations are sent to."
-msgstr "Email адрес на който да се изпрати приключената диктовка."
-
-#: install.php:4
 msgid "Dictation"
 msgstr "Диктовка"
 
-#: install.php:5
+msgid "Applications"
+msgstr ""
+
+msgid ""
+"This uses the app_dictate module of Asterisk to let users record dictate "
+"into their phones. When complete, the dictations can be emailed to an email "
+"address specified in the extension page."
+msgstr ""
+
+msgid "Enabled"
+msgstr "Разрешен"
+
+msgid "Disabled"
+msgstr "Забранен"
+
+msgid "Dictation Services"
+msgstr "Услуги Диктовки"
+
+msgid "Please enter a valid Email Address"
+msgstr "Моля въведете валиден Email Адрес"
+
+msgid "Dictation Service"
+msgstr "Услуга Диктовка"
+
+msgid "Dictation Format"
+msgstr "Формат на Диктовка"
+
+msgid "Email Address"
+msgstr "Email Адрес"
+
+msgid "The email address that completed dictations are sent to."
+msgstr "Email адрес на който да се изпрати приключената диктовка."
+
 msgid "Perform dictation"
 msgstr "Започни  диктовка"
 
-#: install.php:6
 msgid "Email completed dictation"
 msgstr "Изпрати приключена диктовка на email"
-
