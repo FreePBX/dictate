@@ -84,7 +84,7 @@ $attachment = $file unless ($attachment);
 
 my $encoded="";
 # Create the file based on the format the user has specified 
-open FILE, "sox -r 8000 -w -c 1 -s $file -t $format - |";
+open FILE, "sox -r 8000 -2 -c 1 -s $file -t $format - |";
 $buf = "";
 while (read(FILE, $buf, 60*57))  {
 	$encoded .= encode_base64($buf);
