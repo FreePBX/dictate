@@ -3,8 +3,9 @@
 	<repo>extended</repo>
 	<name>Dictation</name>
 	<version>2.11.0.1</version>
-	<publisher>FreePBX</publisher>
-	<license>GPLv2+</license>
+	<publisher>Schmooze Com Inc</publisher>
+	<license>GPLv3+</license>
+	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Applications</category>
 	<changelog>
 		*2.11.0.1* #6613
