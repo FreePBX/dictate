@@ -3,7 +3,6 @@
 # Takes a slin (.raw) file, converts it to a user specified format, and emails it to the specified address.
 #	License for all code of this FreePBX module can be found in the license file inside the module directory
 #	Copyright 2013 Schmooze Com Inc.
-#   Copyright 2006 by Rob Thomas (xrobau@gmail.com)
 
 use MIME::Base64;
 use Net::SMTP;
