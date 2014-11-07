@@ -1,9 +1,8 @@
 #!/usr/bin/perl -w
 
 # Takes a slin (.raw) file, converts it to a user specified format, and emails it to the specified address.
-#
-# Distributed under the terms of the GNU General Public License (GPL) Version 2
-# Copyright 2006 by Rob Thomas (xrobau@gmail.com)
+#	License for all code of this FreePBX module can be found in the license file inside the module directory
+#	Copyright 2013 Schmooze Com Inc.
 
 use MIME::Base64;
 use Net::SMTP;
