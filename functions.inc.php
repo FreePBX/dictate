@@ -3,9 +3,9 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 
 function dictate_get_config($engine) {
 	$modulename = 'dictate';
-	
+
 	// This generates the dialplan
-	global $ext;  
+	global $ext;
 	global $asterisk_conf;
 	switch($engine) {
 		case "asterisk":
@@ -17,12 +17,12 @@ function dictate_get_config($engine) {
 						$fcc = new featurecode($modulename, $featurename);
 						$fc = $fcc->getCodeActive();
 						unset($fcc);
-						
+
 						if ($fc != '')
 							$fname($fc);
 					} else {
 						$ext->add('from-internal-additional', 'debug', '', new ext_noop($modulename.": No func $fname"));
-					}	
+					}
 				}
 			}
 		break;
@@ -79,7 +79,7 @@ function dictate_configpageinit($pagename) {
 	$tech_hardware = isset($_REQUEST['tech_hardware'])?$_REQUEST['tech_hardware']:null;
 
 	// We only want to hook 'users' or 'extensions' pages.
-	if ($pagename != 'users' && $pagename != 'extensions') 
+	if ($pagename != 'users' && $pagename != 'extensions')
 		return true;
 	// On a 'new' user, 'tech_hardware' is set, and there's no extension. Hook into the page.
 	if ($tech_hardware != null || $pagename == 'users') {
@@ -107,7 +107,7 @@ function dictation_applyhooks() {
 	$currentcomponent->addoptlistitem('dictfmt', 'gsm', 'GSM');
 	$currentcomponent->addoptlistitem('dictfmt', 'wav', 'WAV');
 	$currentcomponent->setoptlistopts('dictfmt', 'sort', false);
-	// Add the 'process' function - this gets called when the page is loaded, to hook into 
+	// Add the 'process' function - this gets called when the page is loaded, to hook into
 	// displaying stuff on the page.
 	$currentcomponent->addguifunc('dictate_configpageload');
 
@@ -120,7 +120,7 @@ function dictate_configpageload() {
 	// Init vars from $_REQUEST[]
 	$action = isset($_REQUEST['action'])?$_REQUEST['action']:null;
 	$extdisplay = isset($_REQUEST['extdisplay'])?$_REQUEST['extdisplay']:null;
-	
+
 	// Don't display this stuff it it's on a 'This xtn has been deleted' page.
 	if ($action != 'del') {
 		$dibox = dictate_get($extdisplay);
@@ -131,9 +131,10 @@ function dictate_configpageload() {
 
 		$section = _('Dictation Services');
 		$msgInvalidEmail = _('Please enter a valid Email Address');
-		$currentcomponent->addguielem($section, new gui_selectbox('dictenabled', $currentcomponent->getoptlist('dictena'), $dodict, _('Dictation Service'), '', false));
-		$currentcomponent->addguielem($section, new gui_selectbox('dictformat', $currentcomponent->getoptlist('dictfmt'), $format, _('Dictation Format'), '', false));
-		$currentcomponent->addguielem($section, new gui_textbox('dictemail', $email, _('Email Address'), _('The email address that completed dictations are sent to.'), "!isEmail()", $msgInvalidEmail, true));
+		$category = "advanced";
+		$currentcomponent->addguielem($section, new gui_selectbox('dictenabled', $currentcomponent->getoptlist('dictena'), $dodict, _('Dictation Service'), '', false),$category);
+		$currentcomponent->addguielem($section, new gui_selectbox('dictformat', $currentcomponent->getoptlist('dictfmt'), $format, _('Dictation Format'), '', false),$category);
+		$currentcomponent->addguielem($section, new gui_textbox('dictemail', $email, _('Email Address'), _('The email address that completed dictations are sent to.'), "!isEmail()", $msgInvalidEmail, true),$category);
 	}
 }
 
@@ -146,11 +147,11 @@ function dictate_configprocess() {
 	$dictemail = isset($_REQUEST['dictemail'])?$_REQUEST['dictemail']:null;
 	$dictformat = isset($_REQUEST['dictformat'])?$_REQUEST['dictformat']:null;
 
-	if ($ext==='') { 
-		$extdisplay = $extn; 
+	if ($ext==='') {
+		$extdisplay = $extn;
 	} else {
 		$extdisplay = $ext;
-	} 
+	}
 	if ($action == "add" || $action == "edit") {
 		if (!isset($GLOBALS['abort']) || $GLOBALS['abort'] !== true) {
 			dictate_update($extdisplay, $dictenabled, $dictformat, $dictemail);
@@ -181,7 +182,7 @@ function dictate_get($xtn) {
 
 function dictate_update($ext, $ena, $fmt, $email) {
 	global $astman;
-	
+
 	if ($ena === 'disabled') {
 		dictate_del($ext);
 	} else {
