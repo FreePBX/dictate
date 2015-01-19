@@ -65,9 +65,10 @@ function dictate_senddictate($c) {
 	$ext->add($id, $c, 'dictok', new ext_read('DICTFILE','enter-filename-short'));
 	$ext->add($id, $c, '', new ext_setvar('DICTEMAIL','${DB(AMPUSER/${AMPUSER}/dictate/email)}'));
 	$ext->add($id, $c, '', new ext_setvar('DICTFMT','${DB(AMPUSER/${AMPUSER}/dictate/format)}'));
+	$ext->add($id, $c, '', new ext_setvar('DICTFROM','${DB(AMPUSER/${AMPUSER}/dictate/from)}'));
 	$ext->add($id, $c, '', new ext_setvar('NAME','${DB(AMPUSER/${AMPUSER}/cidname)}'));
 	$ext->add($id, $c, '', new ext_playback('dictation-being-processed'));
-	$ext->add($id, $c, '', new ext_system($asterisk_conf['astvarlibdir'].'/bin/audio-email.pl --file '.$asterisk_conf['astvarlibdir'].'/sounds/dictate/${AMPUSER}/${DICTFILE}.raw --attachment dict-${DICTFILE} --format ${DICTFMT} --to ${DICTEMAIL} --subject "Dictation from ${NAME} Attached"'));
+	$ext->add($id, $c, '', new ext_system($asterisk_conf['astvarlibdir'].'/bin/audio-email.pl --file '.$asterisk_conf['astvarlibdir'].'/sounds/dictate/${AMPUSER}/${DICTFILE}.raw --attachment dict-${DICTFILE} --format ${DICTFMT} --to ${DICTEMAIL} --from ${DICTFROM} --subject "Dictation from ${NAME} Attached"'));
 	$ext->add($id, $c, '', new ext_playback('dictation-sent'));
 	$ext->add($id, $c, '', new ext_macro('hangupcall'));
 }
@@ -138,7 +139,7 @@ function dictate_configpageload() {
 		$currentcomponent->addguielem($section, new gui_selectbox('dictenabled', $currentcomponent->getoptlist('dictena'), $dodict, _('Dictation Service'), '', false),$category);
 		$currentcomponent->addguielem($section, new gui_selectbox('dictformat', $currentcomponent->getoptlist('dictfmt'), $format, _('Dictation Format'), '', false),$category);
 		$currentcomponent->addguielem($section, new gui_textbox('dictemail', $email, _('Email Address'), _('The email address that completed dictations are sent to.'), "!isEmail()", $msgInvalidEmail, true),$category);
-		$currentcomponent->addguielem($section, new gui_textbox('dictfrom', htmlentities($from, ENT_QUOTES), _('From Address'), _('The email address that completed dictations are sent FROM. Format is "A Persons Name &lt;email@address.com&gt;", without quotes, or just a plain email address.'), "!isEmail()", $msgInvalidEmail, true),$category);
+		$currentcomponent->addguielem($section, new gui_textbox('dictfrom', $from, _('From Address'), _('The email address that completed dictations are sent FROM. Format is "A Persons Name &lt;email@address.com&gt;", without quotes, or just a plain email address.'), "!isEmail()", $msgInvalidEmail, true),$category);
 	}
 }
 

@@ -25,7 +25,7 @@ if ($hostname =~ /localhost/) {
 $from .= $hostname;
 
 # Usage:
-my $usage="Usage: --file filename [--attachment filename] [--format (gsm|wav|ogg)] [--to email_address] [--from email_address] [--type content/type] [--subject \"Subject Of Email\"]"; 
+my $usage="Usage: --file filename [--attachment filename] [--format (gsm|wav|ogg)] [--to email_address] [--from base64_encoded_email_address] [--type content/type] [--subject \"Subject Of Email\"]";
 
 # Parse command line..
 while (my $cmd = shift @ARGV) {
@@ -57,7 +57,7 @@ while (my $cmd = shift @ARGV) {
 	$ct = $tmp if (defined $tmp);
   } elsif ($cmd eq "--from") {
 	my $tmp = shift @ARGV;
-	$from = $tmp if (defined $tmp);
+	$from = decode_base64($tmp) if (defined $tmp);
   } elsif ($cmd eq "--file") {
 	my $tmp = shift @ARGV;
 	$file = $tmp if (defined $tmp);
@@ -97,7 +97,7 @@ $attachment =~ s/\.\.//g;
 # And that's pretty much all the hard work done. Now we just create the
 # headers for the MIME encapsulation: 
 my $boundary = '------FREEPBX_AUDIO_MAIL:'; 
-my $dtime = `date`;
+my $dtime = `date '+%c %z'`;
 chomp $dtime;
 my @chrs = ('0' .. '9', 'A' .. 'Z', 'a' .. 'z'); 
 foreach (0..16) { $boundary .= $chrs[rand (scalar @chrs)]; } 
