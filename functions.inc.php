@@ -130,6 +130,7 @@ function dictate_configpageload() {
 		$dodict = $dibox['enabled'];
 		$email = $dibox['email'];
 		$format = $dibox['format'];
+		$from = $dibox['from'];
 
 		$section = _('Dictation Services');
 		$msgInvalidEmail = _('Please enter a valid Email Address');
@@ -137,6 +138,7 @@ function dictate_configpageload() {
 		$currentcomponent->addguielem($section, new gui_selectbox('dictenabled', $currentcomponent->getoptlist('dictena'), $dodict, _('Dictation Service'), '', false),$category);
 		$currentcomponent->addguielem($section, new gui_selectbox('dictformat', $currentcomponent->getoptlist('dictfmt'), $format, _('Dictation Format'), '', false),$category);
 		$currentcomponent->addguielem($section, new gui_textbox('dictemail', $email, _('Email Address'), _('The email address that completed dictations are sent to.'), "!isEmail()", $msgInvalidEmail, true),$category);
+		$currentcomponent->addguielem($section, new gui_textbox('dictfrom', htmlentities($from, ENT_QUOTES), _('From Address'), _('The email address that completed dictations are sent FROM. Format is "A Persons Name &lt;email@address.com&gt;", without quotes, or just a plain email address.'), "!isEmail()", $msgInvalidEmail, true),$category);
 	}
 }
 
@@ -147,6 +149,7 @@ function dictate_configprocess() {
 	$extn = isset($_REQUEST['extension'])?$_REQUEST['extension']:null;
 	$dictenabled = isset($_REQUEST['dictenabled'])?$_REQUEST['dictenabled']:null;
 	$dictemail = isset($_REQUEST['dictemail'])?$_REQUEST['dictemail']:null;
+	$dictfrom = isset($_REQUEST['dictfrom'])?$_REQUEST['dictfrom']:null;
 	$dictformat = isset($_REQUEST['dictformat'])?$_REQUEST['dictformat']:null;
 
 	if ($ext==='') {
@@ -156,7 +159,7 @@ function dictate_configprocess() {
 	}
 	if ($action == "add" || $action == "edit") {
 		if (!isset($GLOBALS['abort']) || $GLOBALS['abort'] !== true) {
-			dictate_update($extdisplay, $dictenabled, $dictformat, $dictemail);
+			dictate_update($extdisplay, $dictenabled, $dictformat, $dictemail, $dictfrom);
 		}
 	} elseif ($action == "del") {
 		dictate_del($extdisplay);
@@ -168,9 +171,10 @@ function dictate_get($xtn) {
 
 	// Retrieve the dictation configuraiton from this user from ASTDB
 	if ($astman) {
-    $ena = $astman->database_get("AMPUSER",$xtn."/dictate/enabled");
-    $format = $astman->database_get("AMPUSER",$xtn."/dictate/format");
-    $email = $astman->database_get("AMPUSER",$xtn."/dictate/email");
+		$ena = $astman->database_get("AMPUSER",$xtn."/dictate/enabled");
+		$format = $astman->database_get("AMPUSER",$xtn."/dictate/format");
+		$email = $astman->database_get("AMPUSER",$xtn."/dictate/email");
+		$from = base64_decode($astman->database_get("AMPUSER",$xtn."/dictate/from"));
 	} else {
 		fatal("Cannot connect to Asterisk Manager with ".$amp_conf["AMPMGRUSER"]."/".$amp_conf["AMPMGRPASS"]);
 	}
@@ -179,23 +183,25 @@ function dictate_get($xtn) {
 	// Default format is ogg
 	if (!$format) { $format = "ogg"; }
 
-	return array('enabled' => $ena, 'format' => $format, 'email' => $email);
+	// No from address?
+	if (!$from) {
+		$from = "dictate@freepbx.org";
+	}
+
+	return array('enabled' => $ena, 'format' => $format, 'email' => $email, 'from' => $from);
 }
 
-function dictate_update($ext, $ena, $fmt, $email) {
+function dictate_update($ext, $ena, $fmt, $email, $from) {
 	global $astman;
 
-	if ($ena === 'disabled') {
-		dictate_del($ext);
-	} else {
+	if ($astman) {
 		// Update the settings in ASTDB
-	  if ($astman) {
-		  $astman->database_put("AMPUSER",$ext."/dictate/enabled",$ena);
-		  $astman->database_put("AMPUSER",$ext."/dictate/format",$fmt);
-		  $astman->database_put("AMPUSER",$ext."/dictate/email",$email);
-	  } else {
-		  fatal("Cannot connect to Asterisk Manager with ".$amp_conf["AMPMGRUSER"]."/".$amp_conf["AMPMGRPASS"]);
-	  }
+		$astman->database_put("AMPUSER",$ext."/dictate/enabled",$ena);
+		$astman->database_put("AMPUSER",$ext."/dictate/format",$fmt);
+		$astman->database_put("AMPUSER",$ext."/dictate/email",$email);
+		$astman->database_put("AMPUSER",$ext."/dictate/from",base64_encode($from));
+	} else {
+		fatal("Cannot connect to Asterisk Manager with ".$amp_conf["AMPMGRUSER"]."/".$amp_conf["AMPMGRPASS"]);
 	}
 }
 
@@ -210,4 +216,3 @@ function dictate_del($ext) {
   }
 }
 
-?>
