@@ -2,66 +2,88 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo dictate module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-11 17:45-0500\n"
 "PO-Revision-Date: 2014-09-12 08:19+0200\n"
 "Last-Translator: Andrew <andrew.nagy@the159.com>\n"
-"Language-Team: Spanish <http://git.freepbx.org/projects/freepbx/dictate/es/>"
-"\n"
-"Language: es_ES\n"
+"Language-Team: Spanish <http://git.freepbx.org/projects/freepbx/dictate/es/"
+">\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es_ES\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 1.10-dev\n"
 "X-Poedit-Language: Spanish\n"
 "X-Poedit-Country: SPAIN\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
+#: /usr/src/freepbx/dictate/install.php:5
 #, fuzzy
 msgid "Dictation"
 msgstr "Dictado"
 
-msgid "Applications"
-msgstr "Aplicaciones"
-
-#, fuzzy
-msgid ""
-"This uses the app_dictate module of Asterisk to let users record dictate "
-"into their phones. When complete, the dictations can be emailed to an email "
-"address specified in the extension page."
+#: /usr/src/freepbx/dictate/functions.inc.php:140
+msgid "Dictation Format"
 msgstr ""
-"Este utiliza el módulo app_dictate de Asterisk para dejar registro de "
-"usuarios dictan en sus teléfonos. Cuando se haya completado , los dictados "
-"pueden ser enviados por correo electrónico a una dirección de correo "
-"electrónico especificada en la página suplementaria ."
 
-msgid "Enabled"
-msgstr "Habilitado"
+#: /usr/src/freepbx/dictate/functions.inc.php:139
+msgid "Dictation Service"
+msgstr ""
 
-msgid "Disabled"
-msgstr "Deshabilitado"
-
+#: /usr/src/freepbx/dictate/functions.inc.php:136
 msgid "Dictation Services"
 msgstr ""
 
+#: /usr/src/freepbx/dictate/functions.inc.php:106
+msgid "Disabled"
+msgstr "Deshabilitado"
+
+#: /usr/src/freepbx/dictate/functions.inc.php:141
+msgid "Email Address"
+msgstr "Dirección de email"
+
+#: /usr/src/freepbx/dictate/install.php:7
+msgid "Email completed dictation"
+msgstr ""
+
+#: /usr/src/freepbx/dictate/functions.inc.php:105
+msgid "Enabled"
+msgstr "Habilitado"
+
+#: /usr/src/freepbx/dictate/functions.inc.php:142
+msgid "From Address"
+msgstr ""
+
+#: /usr/src/freepbx/dictate/install.php:6
+msgid "Perform dictation"
+msgstr ""
+
+#: /usr/src/freepbx/dictate/functions.inc.php:137
 #, fuzzy
 msgid "Please enter a valid Email Address"
 msgstr "Por favor introduce una dirección de correo válida"
 
-msgid "Dictation Service"
+#: /usr/src/freepbx/dictate/functions.inc.php:142
+msgid ""
+"The email address that completed dictations are sent FROM. Format is \"A "
+"Persons Name &lt;email@address.com&gt;\", without quotes, or just a plain "
+"email address."
 msgstr ""
 
-msgid "Dictation Format"
-msgstr ""
-
-msgid "Email Address"
-msgstr "Dirección de email"
-
+#: /usr/src/freepbx/dictate/functions.inc.php:141
 msgid "The email address that completed dictations are sent to."
 msgstr ""
 
-msgid "Perform dictation"
-msgstr ""
+#~ msgid "Applications"
+#~ msgstr "Aplicaciones"
 
-msgid "Email completed dictation"
-msgstr ""
+#, fuzzy
+#~ msgid ""
+#~ "This uses the app_dictate module of Asterisk to let users record dictate "
+#~ "into their phones. When complete, the dictations can be emailed to an "
+#~ "email address specified in the extension page."
+#~ msgstr ""
+#~ "Este utiliza el módulo app_dictate de Asterisk para dejar registro de "
+#~ "usuarios dictan en sus teléfonos. Cuando se haya completado , los "
+#~ "dictados pueden ser enviados por correo electrónico a una dirección de "
+#~ "correo electrónico especificada en la página suplementaria ."

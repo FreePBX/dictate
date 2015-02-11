@@ -7,55 +7,68 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-11 17:45-0500\n"
 "PO-Revision-Date: 2009-02-01 11:30+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Chinese\n"
 "X-Poedit-Country: CHINA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
+#: /usr/src/freepbx/dictate/install.php:5
 msgid "Dictation"
 msgstr "听写"
 
-msgid "Applications"
-msgstr ""
-
-msgid ""
-"This uses the app_dictate module of Asterisk to let users record dictate "
-"into their phones. When complete, the dictations can be emailed to an email "
-"address specified in the extension page."
-msgstr ""
-
-msgid "Enabled"
-msgstr "已启用"
-
-msgid "Disabled"
-msgstr "已禁用"
-
-msgid "Dictation Services"
-msgstr "听写服务"
-
-msgid "Please enter a valid Email Address"
-msgstr "请输入一个有效的电子邮件地址"
-
-msgid "Dictation Service"
-msgstr "听写服务"
-
+#: /usr/src/freepbx/dictate/functions.inc.php:140
 msgid "Dictation Format"
 msgstr "听写格式"
 
+#: /usr/src/freepbx/dictate/functions.inc.php:139
+msgid "Dictation Service"
+msgstr "听写服务"
+
+#: /usr/src/freepbx/dictate/functions.inc.php:136
+msgid "Dictation Services"
+msgstr "听写服务"
+
+#: /usr/src/freepbx/dictate/functions.inc.php:106
+msgid "Disabled"
+msgstr "已禁用"
+
+#: /usr/src/freepbx/dictate/functions.inc.php:141
 msgid "Email Address"
 msgstr "电子邮件地址"
 
-msgid "The email address that completed dictations are sent to."
-msgstr "听写完成后，发送结果到此电子邮件地址。"
+#: /usr/src/freepbx/dictate/install.php:7
+msgid "Email completed dictation"
+msgstr "发送已完成的听写"
 
+#: /usr/src/freepbx/dictate/functions.inc.php:105
+msgid "Enabled"
+msgstr "已启用"
+
+#: /usr/src/freepbx/dictate/functions.inc.php:142
+msgid "From Address"
+msgstr ""
+
+#: /usr/src/freepbx/dictate/install.php:6
 msgid "Perform dictation"
 msgstr "开始听写"
 
-msgid "Email completed dictation"
-msgstr "发送已完成的听写"
+#: /usr/src/freepbx/dictate/functions.inc.php:137
+msgid "Please enter a valid Email Address"
+msgstr "请输入一个有效的电子邮件地址"
+
+#: /usr/src/freepbx/dictate/functions.inc.php:142
+msgid ""
+"The email address that completed dictations are sent FROM. Format is \"A "
+"Persons Name &lt;email@address.com&gt;\", without quotes, or just a plain "
+"email address."
+msgstr ""
+
+#: /usr/src/freepbx/dictate/functions.inc.php:141
+msgid "The email address that completed dictations are sent to."
+msgstr "听写完成后，发送结果到此电子邮件地址。"
