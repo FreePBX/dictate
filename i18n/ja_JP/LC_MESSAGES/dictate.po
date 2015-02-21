@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-11 17:45-0500\n"
+"POT-Creation-Date: 2015-02-20 19:19-0500\n"
 "PO-Revision-Date: 2013-11-07 13:00+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -47,68 +47,70 @@ msgstr ""
 "Language: Japanese\n"
 "X-Generator: Poedit 1.5.7\n"
 
-#: /usr/src/freepbx/dictate/install.php:5
+#: dictate.i18n.php:4
+msgid "Applications"
+msgstr "アプリケーション"
+
+#: dictate.i18n.php:3 install.php:5
 msgid "Dictation"
 msgstr "ディクテーション"
 
-#: /usr/src/freepbx/dictate/functions.inc.php:140
+#: functions.inc.php:140
 msgid "Dictation Format"
 msgstr "ディクテーションフォーマット"
 
-#: /usr/src/freepbx/dictate/functions.inc.php:139
+#: functions.inc.php:139
 msgid "Dictation Service"
 msgstr "ディクテーションサービス"
 
-#: /usr/src/freepbx/dictate/functions.inc.php:136
+#: functions.inc.php:136
 msgid "Dictation Services"
 msgstr "ディクテーションサービス"
 
-#: /usr/src/freepbx/dictate/functions.inc.php:106
+#: functions.inc.php:106
 msgid "Disabled"
 msgstr "無効"
 
-#: /usr/src/freepbx/dictate/functions.inc.php:141
+#: functions.inc.php:141
 msgid "Email Address"
 msgstr "Eメールアドレス"
 
-#: /usr/src/freepbx/dictate/install.php:7
+#: install.php:7
 msgid "Email completed dictation"
 msgstr "ディクテーション完了Eメールアドレス"
 
-#: /usr/src/freepbx/dictate/functions.inc.php:105
+#: functions.inc.php:105
 msgid "Enabled"
 msgstr "有効"
 
-#: /usr/src/freepbx/dictate/functions.inc.php:142
+#: functions.inc.php:142
 msgid "From Address"
 msgstr ""
 
-#: /usr/src/freepbx/dictate/install.php:6
+#: install.php:6
 msgid "Perform dictation"
 msgstr "ディクテーションを実行"
 
-#: /usr/src/freepbx/dictate/functions.inc.php:137
+#: functions.inc.php:137
 msgid "Please enter a valid Email Address"
 msgstr "有効なEメールアドレスを入力してください。"
 
-#: /usr/src/freepbx/dictate/functions.inc.php:142
+#: functions.inc.php:142
 msgid ""
 "The email address that completed dictations are sent FROM. Format is \"A "
 "Persons Name &lt;email@address.com&gt;\", without quotes, or just a plain "
 "email address."
 msgstr ""
 
-#: /usr/src/freepbx/dictate/functions.inc.php:141
+#: functions.inc.php:141
 msgid "The email address that completed dictations are sent to."
 msgstr "完了したディクテーションが送られるEメールアドレス。"
 
-#~ msgid "Applications"
-#~ msgstr "アプリケーション"
-
-#~ msgid ""
-#~ "This uses the app_dictate module of Asterisk to let users record dictate "
-#~ "into their phones. When complete, the dictations can be emailed to an "
-#~ "email address specified in the extension page."
-#~ msgstr ""
-#~ "このモジュールでは、ユーザーの録音を電話に対してしゃべらせるためにAstersik"
-#~ "のapp_dictateモジュールを使用します。"
+#: dictate.i18n.php:5
+msgid ""
+"This uses the app_dictate module of Asterisk to let users record dictate "
+"into their phones. When complete, the dictations can be emailed to an email "
+"address specified in the extension page."
+msgstr ""
+"このモジュールでは、ユーザーの録音を電話に対してしゃべらせるためにAstersikの"
+"app_dictateモジュールを使用します。"
