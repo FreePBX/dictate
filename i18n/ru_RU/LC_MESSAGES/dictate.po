@@ -22,13 +22,17 @@ msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 19:19-0500\n"
-"PO-Revision-Date: 2010-07-23 23:38+0100\n"
-"Last-Translator: Alexander Kozyrev <ceo@postmet.com>\n"
-"Language-Team: Russian <faq@postmet.com>\n"
+"PO-Revision-Date: 2015-04-23 15:42+0200\n"
+"Last-Translator: Yuriy <alliancesko@gmail.com>\n"
+"Language-Team: Russian "
+"<http://weblate.freepbx.org/projects/freepbx/dictate/ru_RU/>\n"
+"Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ru\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2.2-dev\n"
 
 #: dictate.i18n.php:4
 msgid "Applications"
@@ -44,11 +48,11 @@ msgstr "Формат надиктованного сообщения"
 
 #: functions.inc.php:139
 msgid "Dictation Service"
-msgstr "Сервис диктофона"
+msgstr "Диктофонный сервис"
 
 #: functions.inc.php:136
 msgid "Dictation Services"
-msgstr "Сервисы диктофона"
+msgstr "Диктофонные сервисы"
 
 #: functions.inc.php:106
 msgid "Disabled"
@@ -68,11 +72,11 @@ msgstr "Включено"
 
 #: functions.inc.php:142
 msgid "From Address"
-msgstr ""
+msgstr "Адрес От"
 
 #: install.php:6
 msgid "Perform dictation"
-msgstr "Начинать надиктовку"
+msgstr "Начинать диктовку"
 
 #: functions.inc.php:137
 msgid "Please enter a valid Email Address"
@@ -84,6 +88,9 @@ msgid ""
 "Persons Name &lt;email@address.com&gt;\", without quotes, or just a plain "
 "email address."
 msgstr ""
+"Почтовый адрес ОТ которого отправляются надиктованные сообщения. Формат \""
+"Имя &lt;email@address.com&gt;\", без кавычек или просто один адрес "
+"электронной почты."
 
 #: functions.inc.php:141
 msgid "The email address that completed dictations are sent to."
