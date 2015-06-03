@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:19-0500\n"
+"POT-Creation-Date: 2015-06-03 13:18-0400\n"
 "PO-Revision-Date: 2013-11-07 13:00+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -47,11 +47,7 @@ msgstr ""
 "Language: Japanese\n"
 "X-Generator: Poedit 1.5.7\n"
 
-#: dictate.i18n.php:4
-msgid "Applications"
-msgstr "アプリケーション"
-
-#: dictate.i18n.php:3 install.php:5
+#: install.php:5
 msgid "Dictation"
 msgstr "ディクテーション"
 
@@ -106,11 +102,13 @@ msgstr ""
 msgid "The email address that completed dictations are sent to."
 msgstr "完了したディクテーションが送られるEメールアドレス。"
 
-#: dictate.i18n.php:5
-msgid ""
-"This uses the app_dictate module of Asterisk to let users record dictate "
-"into their phones. When complete, the dictations can be emailed to an email "
-"address specified in the extension page."
-msgstr ""
-"このモジュールでは、ユーザーの録音を電話に対してしゃべらせるためにAstersikの"
-"app_dictateモジュールを使用します。"
+#~ msgid "Applications"
+#~ msgstr "アプリケーション"
+
+#~ msgid ""
+#~ "This uses the app_dictate module of Asterisk to let users record dictate "
+#~ "into their phones. When complete, the dictations can be emailed to an "
+#~ "email address specified in the extension page."
+#~ msgstr ""
+#~ "このモジュールでは、ユーザーの録音を電話に対してしゃべらせるためにAstersik"
+#~ "のapp_dictateモジュールを使用します。"

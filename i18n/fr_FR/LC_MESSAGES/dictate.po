@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:19-0500\n"
+"POT-Creation-Date: 2015-06-03 13:18-0400\n"
 "PO-Revision-Date: 2009-04-20 11:18+0100\n"
 "Last-Translator: Séverine GUTIERREZ <severine@medialsace.fr>\n"
 "Language-Team: Français <LL@li.org>\n"
@@ -28,11 +28,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: dictate.i18n.php:4
-msgid "Applications"
-msgstr ""
-
-#: dictate.i18n.php:3 install.php:5
+#: install.php:5
 msgid "Dictation"
 msgstr "Dictée"
 
@@ -86,10 +82,3 @@ msgstr ""
 #: functions.inc.php:141
 msgid "The email address that completed dictations are sent to."
 msgstr "L'adresse Email à laquelle sont envoyées les dictées complétées."
-
-#: dictate.i18n.php:5
-msgid ""
-"This uses the app_dictate module of Asterisk to let users record dictate "
-"into their phones. When complete, the dictations can be emailed to an email "
-"address specified in the extension page."
-msgstr ""

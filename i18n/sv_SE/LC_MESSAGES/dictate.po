@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX dictate\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:19-0500\n"
+"POT-Creation-Date: 2015-06-03 13:18-0400\n"
 "PO-Revision-Date: 2011-03-20 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -29,11 +29,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Swedish\n"
 
-#: dictate.i18n.php:4
-msgid "Applications"
-msgstr ""
-
-#: dictate.i18n.php:3 install.php:5
+#: install.php:5
 msgid "Dictation"
 msgstr "Diktamen"
 
@@ -88,15 +84,14 @@ msgstr ""
 msgid "The email address that completed dictations are sent to."
 msgstr "E-postadressen som diktamen ska skickas till"
 
-#: dictate.i18n.php:5
-msgid ""
-"This uses the app_dictate module of Asterisk to let users record dictate "
-"into their phones. When complete, the dictations can be emailed to an email "
-"address specified in the extension page."
-msgstr ""
-"Denna module använder app_dictate i Asterisk för att låta användare diktera "
-"meddelande via deras telefoner. När dikteringen är klar kan denna e-postas "
-"till en e-postadress som specificeras på anknytningssidan"
+#~ msgid ""
+#~ "This uses the app_dictate module of Asterisk to let users record dictate "
+#~ "into their phones. When complete, the dictations can be emailed to an "
+#~ "email address specified in the extension page."
+#~ msgstr ""
+#~ "Denna module använder app_dictate i Asterisk för att låta användare "
+#~ "diktera meddelande via deras telefoner. När dikteringen är klar kan denna "
+#~ "e-postas till en e-postadress som specificeras på anknytningssidan"
 
 #~ msgid "Internal Options & Configuration"
 #~ msgstr "Interna al och konfigurationer"
