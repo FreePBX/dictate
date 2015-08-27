@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-03 13:18-0400\n"
+"POT-Creation-Date: 2015-08-26 20:59-0700\n"
 "PO-Revision-Date: 2013-11-07 13:00+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -51,23 +51,23 @@ msgstr ""
 msgid "Dictation"
 msgstr "ディクテーション"
 
-#: functions.inc.php:140
+#: functions.inc.php:137
 msgid "Dictation Format"
 msgstr "ディクテーションフォーマット"
 
-#: functions.inc.php:139
+#: functions.inc.php:136
 msgid "Dictation Service"
 msgstr "ディクテーションサービス"
 
-#: functions.inc.php:136
+#: functions.inc.php:133
 msgid "Dictation Services"
 msgstr "ディクテーションサービス"
 
-#: functions.inc.php:106
+#: functions.inc.php:103
 msgid "Disabled"
 msgstr "無効"
 
-#: functions.inc.php:141
+#: functions.inc.php:138
 msgid "Email Address"
 msgstr "Eメールアドレス"
 
@@ -75,11 +75,11 @@ msgstr "Eメールアドレス"
 msgid "Email completed dictation"
 msgstr "ディクテーション完了Eメールアドレス"
 
-#: functions.inc.php:105
+#: functions.inc.php:102
 msgid "Enabled"
 msgstr "有効"
 
-#: functions.inc.php:142
+#: functions.inc.php:139
 msgid "From Address"
 msgstr "送信者メールアドレス"
 
@@ -87,20 +87,31 @@ msgstr "送信者メールアドレス"
 msgid "Perform dictation"
 msgstr "ディクテーションを実行"
 
-#: functions.inc.php:137
+#: functions.inc.php:134
 msgid "Please enter a valid Email Address"
 msgstr "有効なEメールアドレスを入力してください。"
 
-#: functions.inc.php:142
-msgid "The email address that completed dictations are sent FROM. Format is \"A Persons Name &lt;email@address.com&gt;\", without quotes, or just a plain email address."
-msgstr "完了したディクテーションファイルを送るFROMのメールアドレス。入力できる形式は \"A Persons Name &lt;email@address.com&gt;\", (””を外す) または通常のメールアドレスとなります。"
+#: functions.inc.php:139
+msgid ""
+"The email address that completed dictations are sent FROM. Format is \"A "
+"Persons Name &lt;email@address.com&gt;\", without quotes, or just a plain "
+"email address."
+msgstr ""
+"完了したディクテーションファイルを送るFROMのメールアドレス。入力できる形式は "
+"\"A Persons Name &lt;email@address.com&gt;\", (””を外す) または通常のメールア"
+"ドレスとなります。"
 
-#: functions.inc.php:141
+#: functions.inc.php:138
 msgid "The email address that completed dictations are sent to."
 msgstr "完了したディクテーションが送られるEメールアドレス。"
 
 #~ msgid "Applications"
 #~ msgstr "アプリケーション"
 
-#~ msgid "This uses the app_dictate module of Asterisk to let users record dictate into their phones. When complete, the dictations can be emailed to an email address specified in the extension page."
-#~ msgstr "このモジュールでは、ユーザーの録音を電話に対してしゃべらせるためにAstersikのapp_dictateモジュールを使用します。"
+#~ msgid ""
+#~ "This uses the app_dictate module of Asterisk to let users record dictate "
+#~ "into their phones. When complete, the dictations can be emailed to an "
+#~ "email address specified in the extension page."
+#~ msgstr ""
+#~ "このモジュールでは、ユーザーの録音を電話に対してしゃべらせるためにAstersik"
+#~ "のapp_dictateモジュールを使用します。"

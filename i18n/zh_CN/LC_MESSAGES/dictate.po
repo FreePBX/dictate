@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-03 13:18-0400\n"
+"POT-Creation-Date: 2015-08-26 20:59-0700\n"
 "PO-Revision-Date: 2009-02-01 11:30+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -22,23 +22,23 @@ msgstr ""
 msgid "Dictation"
 msgstr "听写"
 
-#: functions.inc.php:140
+#: functions.inc.php:137
 msgid "Dictation Format"
 msgstr "听写格式"
 
-#: functions.inc.php:139
+#: functions.inc.php:136
 msgid "Dictation Service"
 msgstr "听写服务"
 
-#: functions.inc.php:136
+#: functions.inc.php:133
 msgid "Dictation Services"
 msgstr "听写服务"
 
-#: functions.inc.php:106
+#: functions.inc.php:103
 msgid "Disabled"
 msgstr "已禁用"
 
-#: functions.inc.php:141
+#: functions.inc.php:138
 msgid "Email Address"
 msgstr "电子邮件地址"
 
@@ -46,11 +46,11 @@ msgstr "电子邮件地址"
 msgid "Email completed dictation"
 msgstr "发送已完成的听写"
 
-#: functions.inc.php:105
+#: functions.inc.php:102
 msgid "Enabled"
 msgstr "已启用"
 
-#: functions.inc.php:142
+#: functions.inc.php:139
 msgid "From Address"
 msgstr ""
 
@@ -58,17 +58,17 @@ msgstr ""
 msgid "Perform dictation"
 msgstr "开始听写"
 
-#: functions.inc.php:137
+#: functions.inc.php:134
 msgid "Please enter a valid Email Address"
 msgstr "请输入一个有效的电子邮件地址"
 
-#: functions.inc.php:142
+#: functions.inc.php:139
 msgid ""
 "The email address that completed dictations are sent FROM. Format is \"A "
 "Persons Name &lt;email@address.com&gt;\", without quotes, or just a plain "
 "email address."
 msgstr ""
 
-#: functions.inc.php:141
+#: functions.inc.php:138
 msgid "The email address that completed dictations are sent to."
 msgstr "听写完成后，发送结果到此电子邮件地址。"

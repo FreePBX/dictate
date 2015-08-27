@@ -7,10 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-03 13:18-0400\n"
+"POT-Creation-Date: 2015-08-26 20:59-0700\n"
 "PO-Revision-Date: 2014-07-21 16:50+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
-"Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/dictate/bg/>\n"
+"Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/dictate/bg/"
+">\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -25,23 +26,23 @@ msgstr ""
 msgid "Dictation"
 msgstr "Диктовка"
 
-#: functions.inc.php:140
+#: functions.inc.php:137
 msgid "Dictation Format"
 msgstr "Формат на Диктовка"
 
-#: functions.inc.php:139
+#: functions.inc.php:136
 msgid "Dictation Service"
 msgstr "Услуга Диктовка"
 
-#: functions.inc.php:136
+#: functions.inc.php:133
 msgid "Dictation Services"
 msgstr "Услуги Диктовки"
 
-#: functions.inc.php:106
+#: functions.inc.php:103
 msgid "Disabled"
 msgstr "Забранен"
 
-#: functions.inc.php:141
+#: functions.inc.php:138
 msgid "Email Address"
 msgstr "Email Адрес"
 
@@ -49,11 +50,11 @@ msgstr "Email Адрес"
 msgid "Email completed dictation"
 msgstr "Изпрати приключена диктовка на email"
 
-#: functions.inc.php:105
+#: functions.inc.php:102
 msgid "Enabled"
 msgstr "Разрешен"
 
-#: functions.inc.php:142
+#: functions.inc.php:139
 msgid "From Address"
 msgstr "От Адрес"
 
@@ -61,20 +62,31 @@ msgstr "От Адрес"
 msgid "Perform dictation"
 msgstr "Започни  диктовка"
 
-#: functions.inc.php:137
+#: functions.inc.php:134
 msgid "Please enter a valid Email Address"
 msgstr "Моля въведете валиден Email Адрес"
 
-#: functions.inc.php:142
-msgid "The email address that completed dictations are sent FROM. Format is \"A Persons Name &lt;email@address.com&gt;\", without quotes, or just a plain email address."
-msgstr "Email адрес от който да се изпращат приключените диктовки. Формата е \"Име на Човека &lt;email@address.com&gt;\", без кавичките или само email адрес."
+#: functions.inc.php:139
+msgid ""
+"The email address that completed dictations are sent FROM. Format is \"A "
+"Persons Name &lt;email@address.com&gt;\", without quotes, or just a plain "
+"email address."
+msgstr ""
+"Email адрес от който да се изпращат приключените диктовки. Формата е \"Име "
+"на Човека &lt;email@address.com&gt;\", без кавичките или само email адрес."
 
-#: functions.inc.php:141
+#: functions.inc.php:138
 msgid "The email address that completed dictations are sent to."
 msgstr "Email адрес на който да се изпрати приключената диктовка."
 
 #~ msgid "Applications"
 #~ msgstr "Приложения"
 
-#~ msgid "This uses the app_dictate module of Asterisk to let users record dictate into their phones. When complete, the dictations can be emailed to an email address specified in the extension page."
-#~ msgstr "Използва модул app_dictate на Астериск за да позволи на потребителите да записват диктовки чрез телефоните си. След приключване диктовките могат да се изпратят на email определен в настройките на вътрешни линии."
+#~ msgid ""
+#~ "This uses the app_dictate module of Asterisk to let users record dictate "
+#~ "into their phones. When complete, the dictations can be emailed to an "
+#~ "email address specified in the extension page."
+#~ msgstr ""
+#~ "Използва модул app_dictate на Астериск за да позволи на потребителите да "
+#~ "записват диктовки чрез телефоните си. След приключване диктовките могат "
+#~ "да се изпратят на email определен в настройките на вътрешни линии."

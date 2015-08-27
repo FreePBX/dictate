@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo dictate module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-03 13:18-0400\n"
+"POT-Creation-Date: 2015-08-26 20:59-0700\n"
 "PO-Revision-Date: 2015-03-23 02:21+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/dictate/"
@@ -21,23 +21,23 @@ msgstr ""
 msgid "Dictation"
 msgstr "Dictado"
 
-#: functions.inc.php:140
+#: functions.inc.php:137
 msgid "Dictation Format"
 msgstr "Formato de Dictado"
 
-#: functions.inc.php:139
+#: functions.inc.php:136
 msgid "Dictation Service"
 msgstr "Servicio de Dictado"
 
-#: functions.inc.php:136
+#: functions.inc.php:133
 msgid "Dictation Services"
 msgstr "Servicio de Dictado"
 
-#: functions.inc.php:106
+#: functions.inc.php:103
 msgid "Disabled"
 msgstr "Deshabilitado"
 
-#: functions.inc.php:141
+#: functions.inc.php:138
 msgid "Email Address"
 msgstr "Dirección de email"
 
@@ -45,11 +45,11 @@ msgstr "Dirección de email"
 msgid "Email completed dictation"
 msgstr "Dictado de email completado"
 
-#: functions.inc.php:105
+#: functions.inc.php:102
 msgid "Enabled"
 msgstr "Habilitado"
 
-#: functions.inc.php:142
+#: functions.inc.php:139
 msgid "From Address"
 msgstr "Dirección Desde"
 
@@ -57,11 +57,11 @@ msgstr "Dirección Desde"
 msgid "Perform dictation"
 msgstr "Ejecutar Dictado"
 
-#: functions.inc.php:137
+#: functions.inc.php:134
 msgid "Please enter a valid Email Address"
 msgstr "Por favor, introduzca una dirección de email"
 
-#: functions.inc.php:142
+#: functions.inc.php:139
 msgid ""
 "The email address that completed dictations are sent FROM. Format is \"A "
 "Persons Name &lt;email@address.com&gt;\", without quotes, or just a plain "
@@ -71,7 +71,7 @@ msgstr ""
 "formato es \"Nombre de una Persona &lt; email@address.com&gt;\", sin "
 "comillas, o simplemente una dirección de correo electrónico normal."
 
-#: functions.inc.php:141
+#: functions.inc.php:138
 msgid "The email address that completed dictations are sent to."
 msgstr ""
 "La dirección de correo electrónico que completó dictados son enviados a."

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-03 13:18-0400\n"
+"POT-Creation-Date: 2015-08-26 20:59-0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
 "Language-Team: Italian\n"
@@ -16,23 +16,23 @@ msgstr ""
 msgid "Dictation"
 msgstr "Dettatura"
 
-#: functions.inc.php:140
+#: functions.inc.php:137
 msgid "Dictation Format"
 msgstr "Formato Dettatura"
 
-#: functions.inc.php:139
+#: functions.inc.php:136
 msgid "Dictation Service"
 msgstr "Servizio "
 
-#: functions.inc.php:136
+#: functions.inc.php:133
 msgid "Dictation Services"
 msgstr "Servizi Dettatura"
 
-#: functions.inc.php:106
+#: functions.inc.php:103
 msgid "Disabled"
 msgstr "Disattivato"
 
-#: functions.inc.php:141
+#: functions.inc.php:138
 msgid "Email Address"
 msgstr "Indirizzo Email"
 
@@ -40,11 +40,11 @@ msgstr "Indirizzo Email"
 msgid "Email completed dictation"
 msgstr "Email dettatura completata"
 
-#: functions.inc.php:105
+#: functions.inc.php:102
 msgid "Enabled"
 msgstr "Attivato"
 
-#: functions.inc.php:142
+#: functions.inc.php:139
 msgid "From Address"
 msgstr ""
 
@@ -52,17 +52,17 @@ msgstr ""
 msgid "Perform dictation"
 msgstr "Esegui dettatura"
 
-#: functions.inc.php:137
+#: functions.inc.php:134
 msgid "Please enter a valid Email Address"
 msgstr "Prego immettere un indirizzo Email valido"
 
-#: functions.inc.php:142
+#: functions.inc.php:139
 msgid ""
 "The email address that completed dictations are sent FROM. Format is \"A "
 "Persons Name &lt;email@address.com&gt;\", without quotes, or just a plain "
 "email address."
 msgstr ""
 
-#: functions.inc.php:141
+#: functions.inc.php:138
 msgid "The email address that completed dictations are sent to."
 msgstr "L'indirizzo email a cui inviare le dettature completate."
