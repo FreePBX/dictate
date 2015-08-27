@@ -2,12 +2,13 @@
 	<rawname>dictate</rawname>
 	<repo>extended</repo>
 	<name>Dictation</name>
-	<version>13.0.2</version>
+	<version>13.0.3</version>
 	<publisher>Schmooze Com Inc</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Applications</category>
 	<changelog>
+		*13.0.3* Fix incompatibilities
 		*13.0.2* Add Spanish prompts
 		*13.0.1* Styling Fixes release 
 		*2.11.0.3* #6613
