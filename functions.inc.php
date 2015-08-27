@@ -8,7 +8,6 @@ function dictate_get_config($engine) {
 
 	// This generates the dialplan
 	global $ext;
-	global $asterisk_conf;
 	switch($engine) {
 		case "asterisk":
 			if (is_array($featurelist = featurecodes_getModuleFeatures($modulename))) {
@@ -33,7 +32,6 @@ function dictate_get_config($engine) {
 
 function dictate_dodictate($c) {
 	global $ext;
-	global $asterisk_conf;
 
 	$id = "app-dictate-record"; // The context to be included
 
@@ -45,13 +43,12 @@ function dictate_dodictate($c) {
 	$ext->add($id, $c, '', new ext_gotoif('$[$["x${DICTENABLED}"="x"]|$["x${DICTENABLED}"="xdisabled"]]','nodict', 'dictok'));
 	$ext->add($id, $c, 'nodict', new ext_playback('feature-not-avail-line'));
 	$ext->add($id, $c, '', new ext_hangup(''));
-	$ext->add($id, $c, 'dictok', new ext_dictate($asterisk_conf['astvarlibdir'].'/sounds/dictate/${AMPUSER}'));
+	$ext->add($id, $c, 'dictok', new ext_dictate(\FreePBX::Config()->get('ASTVARLIBDIR').'/sounds/dictate/${AMPUSER}'));
 	$ext->add($id, $c, '', new ext_macro('hangupcall'));
 }
 
 function dictate_senddictate($c) {
 	global $ext;
-	global $asterisk_conf;
 
 	$id = "app-dictate-send"; // The context to be included
 	$ext->addInclude('from-internal-additional', $id); // Add the include from from-internal
@@ -68,7 +65,7 @@ function dictate_senddictate($c) {
 	$ext->add($id, $c, '', new ext_setvar('DICTFROM','${DB(AMPUSER/${AMPUSER}/dictate/from)}'));
 	$ext->add($id, $c, '', new ext_setvar('NAME','${DB(AMPUSER/${AMPUSER}/cidname)}'));
 	$ext->add($id, $c, '', new ext_playback('dictation-being-processed'));
-	$ext->add($id, $c, '', new ext_system($asterisk_conf['astvarlibdir'].'/bin/audio-email.pl --file '.$asterisk_conf['astvarlibdir'].'/sounds/dictate/${AMPUSER}/${DICTFILE}.raw --attachment dict-${DICTFILE} --format ${DICTFMT} --to ${DICTEMAIL} --from ${DICTFROM} --subject "Dictation from ${NAME} Attached"'));
+	$ext->add($id, $c, '', new ext_system(\FreePBX::Config()->get('ASTVARLIBDIR').'/bin/audio-email.pl --file '.\FreePBX::Config()->get('ASTVARLIBDIR').'/sounds/dictate/${AMPUSER}/${DICTFILE}.raw --attachment dict-${DICTFILE} --format ${DICTFMT} --to ${DICTEMAIL} --from ${DICTFROM} --subject "Dictation from ${NAME} Attached"'));
 	$ext->add($id, $c, '', new ext_playback('dictation-sent'));
 	$ext->add($id, $c, '', new ext_macro('hangupcall'));
 }
@@ -210,10 +207,10 @@ function dictate_del($ext) {
 	global $astman;
 
 	// Clean up the tree when the user is deleted
-  if ($astman) {
-    $astman->database_deltree("AMPUSER/$ext/dictate");
-  } else {
-    fatal("Cannot connect to Asterisk Manager with ".$amp_conf["AMPMGRUSER"]."/".$amp_conf["AMPMGRPASS"]);
-  }
+	if ($astman) {
+		$astman->database_deltree("AMPUSER/$ext/dictate");
+	} else {
+		fatal("Cannot connect to Asterisk Manager with ".$amp_conf["AMPMGRUSER"]."/".$amp_conf["AMPMGRPASS"]);
+	}
 }
 
