@@ -10,56 +10,60 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-08-26 20:59-0700\n"
-"PO-Revision-Date: 2015-08-26 20:59-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2015-10-14 12:59+0200\n"
+"Last-Translator: Media <mousavi.media@gmail.com>\n"
+"Language-Team: Persian "
+"<http://weblate.freepbx.org/projects/freepbx/dictate/fa/>\n"
+"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.2-dev\n"
 
 #: install.php:5
 msgid "Dictation"
-msgstr ""
+msgstr "دستور"
 
 #: functions.inc.php:137
 msgid "Dictation Format"
-msgstr ""
+msgstr "فرمت دستور"
 
 #: functions.inc.php:136
 msgid "Dictation Service"
-msgstr ""
+msgstr "سرویس دستور"
 
 #: functions.inc.php:133
 msgid "Dictation Services"
-msgstr ""
+msgstr "سرویس های دستور"
 
 #: functions.inc.php:103
 msgid "Disabled"
-msgstr ""
+msgstr "غیرفعال"
 
 #: functions.inc.php:138
 msgid "Email Address"
-msgstr ""
+msgstr "آدرس ایمیل"
 
 #: install.php:7
 msgid "Email completed dictation"
-msgstr ""
+msgstr "دستور تکمیل شده را ایمیل کن"
 
 #: functions.inc.php:102
 msgid "Enabled"
-msgstr ""
+msgstr "فعال"
 
 #: functions.inc.php:139
 msgid "From Address"
-msgstr ""
+msgstr "از آدرس"
 
 #: install.php:6
 msgid "Perform dictation"
-msgstr ""
+msgstr "انجام دستور"
 
 #: functions.inc.php:134
 msgid "Please enter a valid Email Address"
-msgstr ""
+msgstr "لطفا آدرس ایمیل درست وارد کنید"
 
 #: functions.inc.php:139
 msgid ""
