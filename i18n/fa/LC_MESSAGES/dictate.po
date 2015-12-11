@@ -1,0 +1,79 @@
+# This file is part of FreePBX.
+#
+# For licensing information, please see the file named LICENSE located in the module directory
+#
+# FreePBX language template for dictate
+# Copyright (C) 2008-2015 Sangoma, Inc.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-08-26 20:59-0700\n"
+"PO-Revision-Date: 2015-10-14 13:10+0200\n"
+"Last-Translator: Media <mousavi.media@gmail.com>\n"
+"Language-Team: Persian "
+"<http://weblate.freepbx.org/projects/freepbx/dictate/fa/>\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.2-dev\n"
+
+#: install.php:5
+msgid "Dictation"
+msgstr "دستور"
+
+#: functions.inc.php:137
+msgid "Dictation Format"
+msgstr "فرمت دستور"
+
+#: functions.inc.php:136
+msgid "Dictation Service"
+msgstr "سرویس دستور"
+
+#: functions.inc.php:133
+msgid "Dictation Services"
+msgstr "سرویس های دستور"
+
+#: functions.inc.php:103
+msgid "Disabled"
+msgstr "غیرفعال"
+
+#: functions.inc.php:138
+msgid "Email Address"
+msgstr "آدرس ایمیل"
+
+#: install.php:7
+msgid "Email completed dictation"
+msgstr "دستور تکمیل شده را ایمیل کن"
+
+#: functions.inc.php:102
+msgid "Enabled"
+msgstr "فعال"
+
+#: functions.inc.php:139
+msgid "From Address"
+msgstr "از آدرس"
+
+#: install.php:6
+msgid "Perform dictation"
+msgstr "انجام دستور"
+
+#: functions.inc.php:134
+msgid "Please enter a valid Email Address"
+msgstr "لطفا آدرس ایمیل درست وارد کنید"
+
+#: functions.inc.php:139
+msgid ""
+"The email address that completed dictations are sent FROM. Format is \"A "
+"Persons Name &lt;email@address.com&gt;\", without quotes, or just a plain "
+"email address."
+msgstr ""
+"آدرس ایمیلی که دستورات تکمیل شده از آن ارسال میشوند. با فرمت\"A Persons Name "
+"&lt;email@address.com&gt;\" بدون کتیشن, و یا آدرس ایمیل ساده."
+
+#: functions.inc.php:138
+msgid "The email address that completed dictations are sent to."
+msgstr "آدرس ایمیلی که دستورات تکمیل شده به آن ارسال میشود."
