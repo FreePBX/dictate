@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo dictate module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-26 20:59-0700\n"
+"POT-Creation-Date: 2015-12-10 16:45-0800\n"
 "PO-Revision-Date: 2015-03-23 02:21+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/dictate/"
@@ -17,7 +17,11 @@ msgstr ""
 "X-Poedit-Country: SPAIN\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: install.php:5
+#: dictate.i18n.php:6
+msgid "Applications"
+msgstr "Aplicaciones"
+
+#: dictate.i18n.php:4 install.php:5
 msgid "Dictation"
 msgstr "Dictado"
 
@@ -76,15 +80,13 @@ msgid "The email address that completed dictations are sent to."
 msgstr ""
 "La dirección de correo electrónico que completó dictados son enviados a."
 
-#~ msgid "Applications"
-#~ msgstr "Aplicaciones"
-
-#~ msgid ""
-#~ "This uses the app_dictate module of Asterisk to let users record dictate "
-#~ "into their phones. When complete, the dictations can be emailed to an "
-#~ "email address specified in the extension page."
-#~ msgstr ""
-#~ "Este utiliza el módulo app_dictate de Asterisk para dejar registro de "
-#~ "usuarios que dictan en sus teléfonos. Cuando se haya completado, los "
-#~ "dictados pueden ser enviados por correo electrónico a una dirección de "
-#~ "correo electrónico especificada en la página suplementaria."
+#: dictate.i18n.php:8
+msgid ""
+"This uses the app_dictate module of Asterisk to let users record dictate "
+"into their phones. When complete, the dictations can be emailed to an email "
+"address specified in the extension page."
+msgstr ""
+"Este utiliza el módulo app_dictate de Asterisk para dejar registro de "
+"usuarios que dictan en sus teléfonos. Cuando se haya completado, los "
+"dictados pueden ser enviados por correo electrónico a una dirección de "
+"correo electrónico especificada en la página suplementaria."

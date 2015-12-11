@@ -9,19 +9,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-26 20:59-0700\n"
+"POT-Creation-Date: 2015-12-10 16:45-0800\n"
 "PO-Revision-Date: 2015-10-14 13:10+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
-"Language-Team: Persian "
-"<http://weblate.freepbx.org/projects/freepbx/dictate/fa/>\n"
-"Language: fa\n"
+"Language-Team: Persian <http://weblate.freepbx.org/projects/freepbx/dictate/"
+"fa/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: fa\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
-#: install.php:5
+#: dictate.i18n.php:6
+msgid "Applications"
+msgstr ""
+
+#: dictate.i18n.php:4 install.php:5
 msgid "Dictation"
 msgstr "دستور"
 
@@ -77,3 +81,10 @@ msgstr ""
 #: functions.inc.php:138
 msgid "The email address that completed dictations are sent to."
 msgstr "آدرس ایمیلی که دستورات تکمیل شده به آن ارسال میشود."
+
+#: dictate.i18n.php:8
+msgid ""
+"This uses the app_dictate module of Asterisk to let users record dictate "
+"into their phones. When complete, the dictations can be emailed to an email "
+"address specified in the extension page."
+msgstr ""

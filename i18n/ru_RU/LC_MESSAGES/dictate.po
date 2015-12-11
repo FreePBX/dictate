@@ -21,7 +21,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-26 20:59-0700\n"
+"POT-Creation-Date: 2015-12-10 16:45-0800\n"
 "PO-Revision-Date: 2015-04-23 15:42+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/dictate/"
@@ -34,7 +34,11 @@ msgstr ""
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
-#: install.php:5
+#: dictate.i18n.php:6
+msgid "Applications"
+msgstr "Приложения"
+
+#: dictate.i18n.php:4 install.php:5
 msgid "Dictation"
 msgstr "Диктофон"
 
@@ -92,18 +96,16 @@ msgstr ""
 msgid "The email address that completed dictations are sent to."
 msgstr "Адрес эл. почты, куда будут пересылаться надиктованные сообщения."
 
-#~ msgid "Applications"
-#~ msgstr "Приложения"
-
-#~ msgid ""
-#~ "This uses the app_dictate module of Asterisk to let users record dictate "
-#~ "into their phones. When complete, the dictations can be emailed to an "
-#~ "email address specified in the extension page."
-#~ msgstr ""
-#~ "Используется модуль app_dictate Астериск, который даёт возможность "
-#~ "пользователям надиктовывать сообщения на телефон. После чего запись можно "
-#~ "послать по эл. почте на адрес, указанный на странице настроек внутреннего "
-#~ "номера."
+#: dictate.i18n.php:8
+msgid ""
+"This uses the app_dictate module of Asterisk to let users record dictate "
+"into their phones. When complete, the dictations can be emailed to an email "
+"address specified in the extension page."
+msgstr ""
+"Используется модуль app_dictate Астериск, который даёт возможность "
+"пользователям надиктовывать сообщения на телефон. После чего запись можно "
+"послать по эл. почте на адрес, указанный на странице настроек внутреннего "
+"номера."
 
 #~ msgid ""
 #~ "Internal Options \n"
