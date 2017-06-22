@@ -10,17 +10,20 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-07-13 19:39-0700\n"
-"PO-Revision-Date: 2016-07-13 19:39-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2017-06-22 10:54+0200\n"
+"Last-Translator: PETER <ftek@ymail.com>\n"
+"Language-Team: Vietnamese "
+"<http://weblate.freepbx.org/projects/freepbx/dictate/vi/>\n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2.4\n"
 
 #: dictate.i18n.php:6
 msgid "Applications"
-msgstr ""
+msgstr "Các ứng dụng"
 
 #: dictate.i18n.php:4 install.php:5
 msgid "Dictation"
@@ -40,11 +43,11 @@ msgstr ""
 
 #: functions.inc.php:103
 msgid "Disabled"
-msgstr ""
+msgstr "Đã vô hiệu"
 
 #: functions.inc.php:138
 msgid "Email Address"
-msgstr ""
+msgstr "Địa chỉ email"
 
 #: install.php:7
 msgid "Email completed dictation"
@@ -52,11 +55,11 @@ msgstr ""
 
 #: functions.inc.php:102
 msgid "Enabled"
-msgstr ""
+msgstr "Đã kích hoạt"
 
 #: functions.inc.php:139
 msgid "From Address"
-msgstr ""
+msgstr "Từ địa chỉ"
 
 #: install.php:6
 msgid "Perform dictation"
@@ -64,7 +67,7 @@ msgstr ""
 
 #: functions.inc.php:134
 msgid "Please enter a valid Email Address"
-msgstr ""
+msgstr "Vui lòng nhập một địa chỉ Email hợp lệ"
 
 #: functions.inc.php:139
 msgid ""
