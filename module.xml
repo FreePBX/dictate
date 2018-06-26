@@ -2,43 +2,16 @@
 	<rawname>dictate</rawname>
 	<repo>extended</repo>
 	<name>Dictation</name>
-	<version>13.0.5</version>
+	<version>15.0.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
-	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
+	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Applications</category>
 	<changelog>
-		*13.0.5* Add sound languages: it,fr,en_GB
-		*13.0.4* FREEPBX-9951 Japanese language prompts
-		*13.0.3* Fix incompatibilities
-		*13.0.2* Add Spanish prompts
-		*13.0.1* Styling Fixes release
-		*2.11.0.3* #6613
-		*2.11.0.0* bump version
-		*2.10.0.1* #5478
-		*2.10.0.0* new version changes
-		*2.9.0.0* #4533, #4651
-		*2.8.0.0* published 2.8 version
-		*2.7.0.1* localizations
-		*2.7.0.0* #3873
-		*2.6.0.0* localizations
-		*2.5.0.2* localization string enclosures
-		*2.5.0.1* #2530 typo _GLOBALS should be GLOBALS
-		*2.5.0* typo in $_GLOBALS variable
-		*2.4.0* abort if user/extension conflict and move hook after user/extnesion hook
-		*1.1.2.3* #2312 fix dictate in devicesandusers mode
-		*1.1.2.2* changed categories
-		*1.1.2.1* bump for rc1
-		*1.1.2* changed ${CALLERID(number)} to ${AMPUSER} to accomodate CID number masquerading
-		*1.1.1* Fix for Dictation not appearing on User page when in Device and User mode.
-		*1.1* Fix changes not sticking when creating an extension, replace Rob-sounds with Allison-sounds.
-		*1.0.1* Replaced 'invalid extension' with 'feature not available on this line' when disabled
-		*1.0.0* Original Release
+		*15.0.1* 15 Backup
 	</changelog>
 	<description>This uses the app_dictate module of Asterisk to let users record dictate into their phones. When complete, the dictations can be emailed to an email address specified in the extension page.</description>
 	<supported>
-		<version>13.0</version>
+		<version>15.0</version>
 	</supported>
-	<location>release/2.11/dictate-2.11.0.1.tgz</location>
-	<md5sum>2fe7dde2370a8643463a440640ca3f5c</md5sum>
 </module>

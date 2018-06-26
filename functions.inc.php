@@ -190,27 +190,12 @@ function dictate_get($xtn) {
 }
 
 function dictate_update($ext, $ena, $fmt, $email, $from) {
-	global $astman;
-
-	if ($astman) {
-		// Update the settings in ASTDB
-		$astman->database_put("AMPUSER",$ext."/dictate/enabled",$ena);
-		$astman->database_put("AMPUSER",$ext."/dictate/format",$fmt);
-		$astman->database_put("AMPUSER",$ext."/dictate/email",$email);
-		$astman->database_put("AMPUSER",$ext."/dictate/from",base64_encode($from));
-	} else {
-		fatal("Cannot connect to Asterisk Manager with ".$amp_conf["AMPMGRUSER"]."/".$amp_conf["AMPMGRPASS"]);
-	}
+    FreePBX::Modules()->deprecatedFunction();
+    return FreePBX::Dictate()->delete($ext);
 }
 
 function dictate_del($ext) {
-	global $astman;
-
-	// Clean up the tree when the user is deleted
-	if ($astman) {
-		$astman->database_deltree("AMPUSER/$ext/dictate");
-	} else {
-		fatal("Cannot connect to Asterisk Manager with ".$amp_conf["AMPMGRUSER"]."/".$amp_conf["AMPMGRPASS"]);
-	}
+    FreePBX::Modules()->deprecatedFunction();
+    return FreePBX::Dictate()->delete($ext);
 }
 
