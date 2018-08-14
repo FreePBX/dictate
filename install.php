@@ -20,6 +20,3 @@ $fcc->setDescription('Email completed dictation');
 $fcc->setDefault('*35');
 $fcc->update();
 unset($fcc);
-
-
-?>
