@@ -19,7 +19,7 @@ class Restore Extends Base\RestoreBase{
                 return $this;
             }
             $tmp = explode('/', $key);
-            if(!is_numeric($tmp[0] || $tmp[1] !== 'dictate'){
+            if(!is_numeric($tmp[0]) || $tmp[1] !== 'dictate'){
                 continue;
             }
             $data[$tmp[0]][$tmp[2]] = $val;
