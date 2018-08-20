@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-13 19:39-0700\n"
+"POT-Creation-Date: 2018-08-20 13:56-0400\n"
 "PO-Revision-Date: 2018-07-28 09:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/dictate/de/>\n"
@@ -48,7 +48,7 @@ msgstr "Deaktiviert"
 msgid "Email Address"
 msgstr "E-Mail-Adresse"
 
-#: install.php:7
+#: dictate.i18n.php:12 install.php:7
 msgid "Email completed dictation"
 msgstr "E-Mail abgeschlossenes Diktat"
 
@@ -60,7 +60,7 @@ msgstr "Aktiviert"
 msgid "From Address"
 msgstr "Von der Adresse"
 
-#: install.php:6
+#: dictate.i18n.php:10 install.php:6
 msgid "Perform dictation"
 msgstr "Diktat beginnen"
 
@@ -89,5 +89,5 @@ msgid ""
 "address specified in the extension page."
 msgstr ""
 "Dies verwendet das app_dictate-Modul von Asterisk, damit Benutzer Diktate in "
-"ihre Telefone aufnehmen können. Nach Abschluss können die Diktate an eine E"
-"-Mail-Adresse gesendet werden, die auf der Erweiterungsseite angegeben ist."
+"ihre Telefone aufnehmen können. Nach Abschluss können die Diktate an eine E-"
+"Mail-Adresse gesendet werden, die auf der Erweiterungsseite angegeben ist."

@@ -9,11 +9,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-13 19:39-0700\n"
+"POT-Creation-Date: 2018-08-20 13:56-0400\n"
 "PO-Revision-Date: 2016-12-16 01:22+0200\n"
 "Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
-"Language-Team: Portuguese (Brazil) "
-"<http://weblate.freepbx.org/projects/freepbx/dictate/pt_BR/>\n"
+"Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
+"freepbx/dictate/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -49,7 +49,7 @@ msgstr "Desabilitado"
 msgid "Email Address"
 msgstr "Endereços de Email"
 
-#: install.php:7
+#: dictate.i18n.php:12 install.php:7
 msgid "Email completed dictation"
 msgstr "Ditado de e-mail completo"
 
@@ -61,7 +61,7 @@ msgstr "Habilitado"
 msgid "From Address"
 msgstr "Do Endereço"
 
-#: install.php:6
+#: dictate.i18n.php:10 install.php:6
 msgid "Perform dictation"
 msgstr "Executar ditado"
 
@@ -75,8 +75,8 @@ msgid ""
 "Persons Name &lt;email@address.com&gt;\", without quotes, or just a plain "
 "email address."
 msgstr ""
-"O endereço de e-mail que completou os ditados será enviado DE. O formato é \""
-"Nomes da Pessoa&lt;email@endereço.com&gt;\", sem aspas, ou apenas um "
+"O endereço de e-mail que completou os ditados será enviado DE. O formato é "
+"\"Nomes da Pessoa&lt;email@endereço.com&gt;\", sem aspas, ou apenas um "
 "endereço de e-mail simples."
 
 #: functions.inc.php:138
