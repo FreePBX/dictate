@@ -2,12 +2,13 @@
 	<rawname>dictate</rawname>
 	<repo>extended</repo>
 	<name>Dictation</name>
-	<version>15.0.2</version>
+	<version>15.0.3</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Applications</category>
 	<changelog>
+		*15.0.3* fixing legacy restore 
 		*15.0.2* Packaging of ver 15.0.2
 		*15.0.1* 15 Backup
 	</changelog>
