@@ -4,9 +4,10 @@ use FreePBX\modules\Backup as Base;
 class Restore Extends Base\RestoreBase{
 	public function runRestore($jobid){
 		$configs = $this->getConfigs();
-		foreach ($configs as $ext => $conf) {
+		foreach ($configs['data'] as $ext => $conf) {
 			$this->FreePBX->Dictate->add($ext, $conf['enabled'], $conf['format'], $conf['email'], $conf['from']);
 		}
+		$this->importFeatureCodes($data['features']);
 	}
 	public function processLegacy($pdo, $data, $tables, $unknownTables){
 		$ampuser = $data['astdb']['AMPUSERS'];
@@ -27,5 +28,6 @@ class Restore Extends Base\RestoreBase{
 		foreach ($data as $key => $value) {
 			$this->FreePBX->Dictate->add($key, $value['enabled'], $value['format'], $value['email'], $value['from']);
 		}
+		$this->restoreLegacyFeatureCodes($pdo);
 	}
 }
