@@ -191,7 +191,7 @@ function dictate_get($xtn) {
 
 function dictate_update($ext, $ena, $fmt, $email, $from) {
     FreePBX::Modules()->deprecatedFunction();
-    return FreePBX::Dictate()->delete($ext);
+    return FreePBX::Dictate()->update($ext, $ena, $fmt, $email, $from);
 }
 
 function dictate_del($ext) {
