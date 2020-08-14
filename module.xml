@@ -36,6 +36,7 @@
 		*1.0.0* Original Release
 	</changelog>
 	<description>This uses the app_dictate module of Asterisk to let users record dictate into their phones. When complete, the dictations can be emailed to an email address specified in the extension page.</description>
+	<more-info>https://wiki.freepbx.org/display/FPG/Extensions+Module+-+Other+%28Custom%29+Extension#ExtensionsModule-Other(Custom)Extension-DictationServices</more-info>
 	<supported>
 		<version>13.0</version>
 	</supported>
