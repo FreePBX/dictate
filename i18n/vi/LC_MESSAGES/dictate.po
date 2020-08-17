@@ -1,0 +1,94 @@
+# This file is part of FreePBX.
+#
+# For licensing information, please see the file named LICENSE located in the module directory
+#
+# FreePBX language template for dictate
+# Copyright (C) 2008-2016 Sangoma, Inc.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-13 19:39-0700\n"
+"PO-Revision-Date: 2017-07-01 10:07+0200\n"
+"Last-Translator: PETER <ftek@ymail.com>\n"
+"Language-Team: Vietnamese "
+"<http://weblate.freepbx.org/projects/freepbx/dictate/vi/>\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2.4\n"
+
+#: dictate.i18n.php:6
+msgid "Applications"
+msgstr "Các ứng dụng"
+
+#: dictate.i18n.php:4 install.php:5
+msgid "Dictation"
+msgstr "Soạn thảo"
+
+#: functions.inc.php:137
+msgid "Dictation Format"
+msgstr "Định dạng soạn thảo"
+
+#: functions.inc.php:136
+msgid "Dictation Service"
+msgstr "Dịch vụ soạn thảo"
+
+#: functions.inc.php:133
+msgid "Dictation Services"
+msgstr "Các dịch vụ soạn thảo"
+
+#: functions.inc.php:103
+msgid "Disabled"
+msgstr "Đã vô hiệu"
+
+#: functions.inc.php:138
+msgid "Email Address"
+msgstr "Địa chỉ email"
+
+#: install.php:7
+msgid "Email completed dictation"
+msgstr "Soạn thảo Email hoàn thành"
+
+#: functions.inc.php:102
+msgid "Enabled"
+msgstr "Đã kích hoạt"
+
+#: functions.inc.php:139
+msgid "From Address"
+msgstr "Từ địa chỉ"
+
+#: install.php:6
+msgid "Perform dictation"
+msgstr "Thực hiện soạn thảo"
+
+#: functions.inc.php:134
+msgid "Please enter a valid Email Address"
+msgstr "Vui lòng nhập một địa chỉ Email hợp lệ"
+
+#: functions.inc.php:139
+msgid ""
+"The email address that completed dictations are sent FROM. Format is \"A "
+"Persons Name &lt;email@address.com&gt;\", without quotes, or just a plain "
+"email address."
+msgstr ""
+"Địa chỉ Email đã hoàn thành soạn thảo được gửi TỪ. Định dạng \"tên một người "
+"&lt;email@address.com&gt;\", không chứa dấu ngoặc kép, chỉ là mộ email đơn "
+"giản."
+
+#: functions.inc.php:138
+msgid "The email address that completed dictations are sent to."
+msgstr "Đại chỉ email đã hoàn thành soạn thảo được gửi đến."
+
+#: dictate.i18n.php:8
+msgid ""
+"This uses the app_dictate module of Asterisk to let users record dictate "
+"into their phones. When complete, the dictations can be emailed to an email "
+"address specified in the extension page."
+msgstr ""
+"Điêu này sử dụng mô đun app_dictate của Asterisk để cho phép người dùng ghi "
+"lại soạn thảo vào trong điện thoại của họ. Khi hoàn thành, các soạn thảo sẽ "
+"được gửi đến một địa chỉ email xác định trong trang máy nhánh."

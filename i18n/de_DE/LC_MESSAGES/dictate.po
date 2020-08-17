@@ -1,0 +1,93 @@
+# This file is part of FreePBX.
+#
+# For licensing information, please see the file named LICENSE located in the module directory
+#
+# FreePBX language template for dictate
+# Copyright (C) 2008-2016 Sangoma, Inc.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-13 19:39-0700\n"
+"PO-Revision-Date: 2018-07-28 09:00+0000\n"
+"Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
+"Language-Team: German <http://*/projects/freepbx/dictate/de/>\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.0.1\n"
+
+#: dictate.i18n.php:6
+msgid "Applications"
+msgstr "Anwendungen"
+
+#: dictate.i18n.php:4 install.php:5
+msgid "Dictation"
+msgstr "Diktat"
+
+#: functions.inc.php:137
+msgid "Dictation Format"
+msgstr "Diktatformat"
+
+#: functions.inc.php:136
+msgid "Dictation Service"
+msgstr "Diktat-Service"
+
+#: functions.inc.php:133
+msgid "Dictation Services"
+msgstr "Diktatdienste"
+
+#: functions.inc.php:103
+msgid "Disabled"
+msgstr "Deaktiviert"
+
+#: functions.inc.php:138
+msgid "Email Address"
+msgstr "E-Mail-Adresse"
+
+#: install.php:7
+msgid "Email completed dictation"
+msgstr "E-Mail abgeschlossenes Diktat"
+
+#: functions.inc.php:102
+msgid "Enabled"
+msgstr "Aktiviert"
+
+#: functions.inc.php:139
+msgid "From Address"
+msgstr "Von der Adresse"
+
+#: install.php:6
+msgid "Perform dictation"
+msgstr "Diktat beginnen"
+
+#: functions.inc.php:134
+msgid "Please enter a valid Email Address"
+msgstr "Bitte geben Sie eine gültige E-Mail Adresse ein"
+
+#: functions.inc.php:139
+msgid ""
+"The email address that completed dictations are sent FROM. Format is \"A "
+"Persons Name &lt;email@address.com&gt;\", without quotes, or just a plain "
+"email address."
+msgstr ""
+"Die E-Mail-Adresse, an die die Diktate gesendet wurden, wird von FROM "
+"gesendet. Das Format lautet \"Ein Personenname & lt;email@address.com&gt;\", "
+"ohne Anführungszeichen oder nur eine einfache E-Mail-Adresse."
+
+#: functions.inc.php:138
+msgid "The email address that completed dictations are sent to."
+msgstr "Die E-Mail-Adresse, an die Diktate gesendet wurden."
+
+#: dictate.i18n.php:8
+msgid ""
+"This uses the app_dictate module of Asterisk to let users record dictate "
+"into their phones. When complete, the dictations can be emailed to an email "
+"address specified in the extension page."
+msgstr ""
+"Dies verwendet das app_dictate-Modul von Asterisk, damit Benutzer Diktate in "
+"ihre Telefone aufnehmen können. Nach Abschluss können die Diktate an eine E"
+"-Mail-Adresse gesendet werden, die auf der Erweiterungsseite angegeben ist."
