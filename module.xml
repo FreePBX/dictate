@@ -2,12 +2,13 @@
 	<rawname>dictate</rawname>
 	<repo>extended</repo>
 	<name>Dictation</name>
-	<version>13.0.5</version>
+	<version>13.0.6</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Applications</category>
 	<changelog>
+		*13.0.6* Packaging of ver 13.0.6
 		*13.0.5* Add sound languages: it,fr,en_GB
 		*13.0.4* FREEPBX-9951 Japanese language prompts
 		*13.0.3* Fix incompatibilities

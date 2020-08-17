@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-10 16:45-0800\n"
+"POT-Creation-Date: 2020-08-17 02:46+0000\n"
 "PO-Revision-Date: 2018-05-29 08:39+0000\n"
 "Last-Translator: Stell0 <stefano.fancello@nethesis.it>\n"
 "Language-Team: Italian <http://*/projects/freepbx/dictate/it/>\n"
@@ -43,7 +43,7 @@ msgstr "Disattivato"
 msgid "Email Address"
 msgstr "Indirizzo Email"
 
-#: install.php:7
+#: dictate.i18n.php:12 install.php:7
 msgid "Email completed dictation"
 msgstr "Email dettatura completata"
 
@@ -55,7 +55,7 @@ msgstr "Attivato"
 msgid "From Address"
 msgstr "Dall'indirizzo"
 
-#: install.php:6
+#: dictate.i18n.php:10 install.php:6
 msgid "Perform dictation"
 msgstr "Esegui dettatura"
 

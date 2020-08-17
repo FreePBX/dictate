@@ -20,10 +20,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX dictate\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-10 16:45-0800\n"
+"POT-Creation-Date: 2020-08-17 02:46+0000\n"
 "PO-Revision-Date: 2011-03-20 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -57,7 +58,7 @@ msgstr "Avaktiverad"
 msgid "Email Address"
 msgstr "E-postadress"
 
-#: install.php:7
+#: dictate.i18n.php:12 install.php:7
 msgid "Email completed dictation"
 msgstr "E-posta färdig diktamen"
 
@@ -69,7 +70,7 @@ msgstr "Aktiverad"
 msgid "From Address"
 msgstr ""
 
-#: install.php:6
+#: dictate.i18n.php:10 install.php:6
 msgid "Perform dictation"
 msgstr "Starta diktamen"
 

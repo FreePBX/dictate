@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo dictate module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-10 16:45-0800\n"
+"POT-Creation-Date: 2020-08-17 02:46+0000\n"
 "PO-Revision-Date: 2015-03-23 02:21+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/dictate/"
 "es_ES/>\n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es_ES\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.2-dev\n"
 "X-Poedit-Language: Spanish\n"
@@ -45,7 +45,7 @@ msgstr "Deshabilitado"
 msgid "Email Address"
 msgstr "Dirección de email"
 
-#: install.php:7
+#: dictate.i18n.php:12 install.php:7
 msgid "Email completed dictation"
 msgstr "Dictado de email completado"
 
@@ -57,7 +57,7 @@ msgstr "Habilitado"
 msgid "From Address"
 msgstr "Dirección Desde"
 
-#: install.php:6
+#: dictate.i18n.php:10 install.php:6
 msgid "Perform dictation"
 msgstr "Ejecutar Dictado"
 
