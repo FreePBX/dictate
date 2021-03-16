@@ -2,22 +2,17 @@
 	<rawname>dictate</rawname>
 	<repo>extended</repo>
 	<name>Dictation</name>
-	<version>15.0.7</version>
+	<version>16.0.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Applications</category>
 	<changelog>
-		*15.0.7* Packaging of ver 15.0.7
-		*15.0.6* Related to FREEPBX-20414: removed $jobid from runRestore() 
-		*15.0.5* FREEPBX-19911 Enable Dictation option is broken, Not able to enable the dictation service in FreePBX 15 
-		*15.0.3* fixing legacy restore
-		*15.0.2* Packaging of ver 15.0.2
-		*15.0.1* 15 Backup
+		*16.0.1* 16.0 release
 	</changelog>
 	<description>This uses the app_dictate module of Asterisk to let users record dictate into their phones. When complete, the dictations can be emailed to an email address specified in the extension page.</description>
 	<more-info>https://wiki.freepbx.org/display/FPG/Extensions+Module+-+Other+%28Custom%29+Extension#ExtensionsModule-Other(Custom)Extension-DictationServices</more-info>
 	<supported>
-		<version>15.0</version>
+		<version>16.0</version>
 	</supported>
 </module>
