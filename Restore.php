@@ -7,7 +7,9 @@ class Restore Extends Base\RestoreBase{
 		foreach ($configs['data'] as $ext => $conf) {
 			$this->FreePBX->Dictate->add($ext, $conf['enabled'], $conf['format'], $conf['email'], $conf['from']);
 		}
-		$this->importFeatureCodes($data['features']);
+		if(isset($data)) {
+			$this->importFeatureCodes($data['features']);
+		}
 	}
 	public function processLegacy($pdo, $data, $tables, $unknownTables){
 		$ampuser = $data['astdb']['AMPUSERS'];
