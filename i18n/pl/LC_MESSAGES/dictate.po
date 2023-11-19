@@ -10,64 +10,68 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-17 02:46+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2023-11-19 09:18+0000\n"
+"Last-Translator: Szymon Wysokinski <szymon.wysokinski@sqspolska.pl>\n"
+"Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/dictate/"
+"pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: dictate.i18n.php:6
 msgid "Applications"
-msgstr ""
+msgstr "Aplikacje"
 
 #: dictate.i18n.php:4
 #: install.php:5
 msgid "Dictation"
-msgstr ""
+msgstr "Dyktowanie"
 
 #: functions.inc.php:137
 msgid "Dictation Format"
-msgstr ""
+msgstr "Format dyktowania"
 
 #: functions.inc.php:136
 msgid "Dictation Service"
-msgstr ""
+msgstr "Usługa dyktowania"
 
 #: functions.inc.php:133
 msgid "Dictation Services"
-msgstr ""
+msgstr "Usługi dyktowania"
 
 #: functions.inc.php:103
 msgid "Disabled"
-msgstr ""
+msgstr "Wyłączony"
 
 #: functions.inc.php:138
 msgid "Email Address"
-msgstr ""
+msgstr "Adres e-mail"
 
 #: dictate.i18n.php:12
 #: install.php:7
 msgid "Email completed dictation"
-msgstr ""
+msgstr "E-mail z ukończonym dyktowaniem"
 
 #: functions.inc.php:102
 msgid "Enabled"
-msgstr ""
+msgstr "Włączony"
 
 #: functions.inc.php:139
 msgid "From Address"
-msgstr ""
+msgstr "Adres nadawcy"
 
 #: dictate.i18n.php:10
 #: install.php:6
 msgid "Perform dictation"
-msgstr ""
+msgstr "Wykonaj dyktowanie"
 
 #: functions.inc.php:134
 msgid "Please enter a valid Email Address"
-msgstr ""
+msgstr "Podaj prawidłowy adres e-mail"
 
 #: functions.inc.php:139
 msgid ""
@@ -75,10 +79,13 @@ msgid ""
 "Persons Name &lt;email@address.com&gt;\", without quotes, or just a plain "
 "email address."
 msgstr ""
+"Adres e-mail z którego wysyłane są ukończone dyktowania. Format to \"Imię i "
+"nazwisko osoby &lt;email@address.com&gt;\", bez cudzysłowów lub tylko zwykły "
+"adres e-mail."
 
 #: functions.inc.php:138
 msgid "The email address that completed dictations are sent to."
-msgstr ""
+msgstr "Adres e-mail na który wysyłane są ukończone dyktowania."
 
 #: dictate.i18n.php:8
 msgid ""
@@ -86,3 +93,7 @@ msgid ""
 "into their phones. When complete, the dictations can be emailed to an email "
 "address specified in the extension page."
 msgstr ""
+"Wykorzystuje moduł Asterisk app_dictate aby umożliwić użytkownikom "
+"nagrywanie dyktowania na swoich telefonach. Po zakończeniu dyktowania można "
+"go wysłać pocztą e-mail na adres e-mail podany w ustawieniach numeru "
+"wewnętrzenego."
