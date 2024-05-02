@@ -12,7 +12,7 @@ class Restore Extends Base\RestoreBase{
 		}
 	}
 	public function processLegacy($pdo, $data, $tables, $unknownTables){
-		$ampuser = $data['astdb']['AMPUSERS'];
+		$ampuser = $data['astdb']['AMPUSERS'] ?? '';
 		if(!$ampusers){
 			return $this;
 		}
