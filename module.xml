@@ -2,17 +2,17 @@
 	<rawname>dictate</rawname>
 	<repo>extended</repo>
 	<name>Dictation</name>
-	<version>17.0.1.2</version>
+	<version>18.0.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Applications</category>
 	<changelog>
-		*17.0.1.2* 17.0 release
+		*18.0.1* initial release
 	</changelog>
 	<description>This uses the app_dictate module of Asterisk to let users record dictate into their phones. When complete, the dictations can be emailed to an email address specified in the extension page.</description>
 	<more-info>https://sangomakb.atlassian.net/wiki/spaces/PG/pages/22642904/PBX+GUI+-+Extensions+Module+-+Other+Custom+Extension#ExtensionsModule-Other(Custom)Extension-DictationServices</more-info>
 	<supported>
-		<version>17.0</version>
+		<version>18.0</version>
 	</supported>
 </module>
