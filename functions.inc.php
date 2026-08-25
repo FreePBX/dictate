@@ -150,7 +150,7 @@ function dictate_configprocess() {
 	$dictfrom = isset($_REQUEST['dictfrom'])?$_REQUEST['dictfrom']:null;
 	$dictformat = isset($_REQUEST['dictformat'])?$_REQUEST['dictformat']:null;
 
-	if ($ext==='') {
+	if ($ext === '' || $ext === null) {
 		$extdisplay = $extn;
 	} else {
 		$extdisplay = $ext;
@@ -165,14 +165,14 @@ function dictate_configprocess() {
 }
 
 function dictate_get($xtn) {
-	global $astman;
+	global $astman, $amp_conf;
 
 	// Retrieve the dictation configuraiton from this user from ASTDB
 	if ($astman) {
 		$ena = $astman->database_get("AMPUSER",$xtn."/dictate/enabled");
 		$format = $astman->database_get("AMPUSER",$xtn."/dictate/format");
 		$email = $astman->database_get("AMPUSER",$xtn."/dictate/email");
-		$from = base64_decode($astman->database_get("AMPUSER",$xtn."/dictate/from"));
+		$from = base64_decode((string)$astman->database_get("AMPUSER",$xtn."/dictate/from"));
 	} else {
 		fatal("Cannot connect to Asterisk Manager with ".$amp_conf["AMPMGRUSER"]."/".$amp_conf["AMPMGRPASS"]);
 	}

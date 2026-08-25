@@ -17,11 +17,10 @@ class Dictate extends FreePBX_Helpers implements BMO {
         $final = [];
         $raw = $this->FreePBX->astman->database_show('AMPUSER');
         foreach ($raw as $key => $value) {
-            $parts = explode('/', $key);
-            if($parts[2] !== 'dictate'){
+            if(!preg_match('#^/?(?:AMPUSER/)?([^/]+)/dictate/([^/]+)$#', $key, $matches)){
                 continue;
             }
-            $final[$parts[1]][$parts[3]] = $value;
+            $final[$matches[1]][$matches[2]] = $value;
         }
         return $final;
     }
@@ -32,7 +31,7 @@ class Dictate extends FreePBX_Helpers implements BMO {
         $this->FreePBX->astman->database_put('AMPUSER', $ext.'/dictate/enabled', $ena);
         $this->FreePBX->astman->database_put('AMPUSER', $ext.'/dictate/format', $fmt);
         $this->FreePBX->astman->database_put('AMPUSER', $ext.'/dictate/email', $email);
-        $this->FreePBX->astman->database_put('AMPUSER', $ext.'/dictate/from', base64_encode($from));
+        $this->FreePBX->astman->database_put('AMPUSER', $ext.'/dictate/from', base64_encode((string)$from));
         return $this;
     }
     public function delete($ext){
